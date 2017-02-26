@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9641699a-c3e9-4aed-9b1d-163595b2b149" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="WorldGenerator.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/WorldGenerator.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding>
+                <marker date="1488049711923" expanded="true" signature="64:185" ph="{...}" />
+                <marker date="1488049711923" expanded="true" signature="114:121" ph="{...}" />
+                <marker date="1488049711923" expanded="true" signature="176:183" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MeshCreator.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/MeshCreator.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" column="5" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+              <folding>
+                <marker date="1488129712396" expanded="true" signature="6:90" ph="..." />
+                <marker date="1488129712396" expanded="true" signature="130:3105" ph="{...}" />
+                <marker date="1488129712396" expanded="true" signature="177:3103" ph="{...}" />
+                <marker date="1488129712396" expanded="true" signature="372:1148" ph="{...}" />
+                <marker date="1488129712396" expanded="true" signature="422:488" ph="{...}" />
+                <marker date="1488129712396" expanded="true" signature="505:576" ph="{...}" />
+                <marker date="1488129712396" expanded="true" signature="700:918" ph="{...}" />
+                <marker date="1488129712396" expanded="true" signature="1190:1606" ph="{...}" />
+                <marker date="1488129712396" expanded="true" signature="1345:1566" ph="{...}" />
+                <marker date="1488129712396" expanded="true" signature="1643:2455" ph="{...}" />
+                <marker date="1488129712396" expanded="true" signature="1687:1740" ph="{...}" />
+                <marker date="1488129712396" expanded="true" signature="1807:2200" ph="{...}" />
+                <marker date="1488129712396" expanded="true" signature="2242:2294" ph="{...}" />
+                <marker date="1488129712396" expanded="true" signature="2496:3097" ph="{...}" />
+                <marker date="1488129712396" expanded="true" signature="2666:2793" ph="{...}" />
+                <marker date="1488129712396" expanded="true" signature="2939:3012" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PolygonGenerator.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/VoxelEngine/PolygonGenerator.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="43" column="29" lean-forward="false" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
+              <folding>
+                <marker date="1488130640024" expanded="true" signature="50:6736" ph="{...}" />
+                <marker date="1488130640024" expanded="true" signature="63:143" ph="..." />
+                <marker date="1488130640024" expanded="true" signature="195:6733" ph="{...}" />
+                <marker date="1488130640024" expanded="true" signature="898:1089" ph="{...}" />
+                <marker date="1488130640024" expanded="true" signature="1112:1250" ph="{...}" />
+                <marker date="1488130640024" expanded="true" signature="1136:1240" ph="{...}" />
+                <marker date="1488130640024" expanded="true" signature="1323:1425" ph="{...}" />
+                <marker date="1488130640024" expanded="true" signature="1452:2423" ph="{...}" />
+                <marker date="1488130640024" expanded="true" signature="1545:2413" ph="{...}" />
+                <marker date="1488130640024" expanded="true" signature="1915:2399" ph="{...}" />
+                <marker date="1488130640024" expanded="true" signature="1949:2297" ph="{...}" />
+                <marker date="1488130640024" expanded="true" signature="2048:2135" ph="{...}" />
+                <marker date="1488130640024" expanded="true" signature="2193:2274" ph="{...}" />
+                <marker date="1488130640024" expanded="true" signature="2315:2379" ph="{...}" />
+                <marker date="1488130640024" expanded="true" signature="2449:2948" ph="{...}" />
+                <marker date="1488130640024" expanded="true" signature="2504:2938" ph="{...}" />
+                <marker date="1488130640024" expanded="true" signature="2563:2924" ph="{...}" />
+                <marker date="1488130640024" expanded="true" signature="2606:2906" ph="{...}" />
+                <marker date="1488130640024" expanded="true" signature="2698:2778" ph="{...}" />
+                <marker date="1488130640024" expanded="true" signature="2804:2884" ph="{...}" />
+                <marker date="1488130640024" expanded="true" signature="2983:3158" ph="{...}" />
+                <marker date="1488130640024" expanded="true" signature="3068:3115" ph="{...}" />
+                <marker date="1488130640024" expanded="true" signature="3198:4780" ph="{...}" />
+                <marker date="1488130640024" expanded="true" signature="3251:3588" ph="{...}" />
+                <marker date="1488130640024" expanded="true" signature="3639:3984" ph="{...}" />
+                <marker date="1488130640024" expanded="true" signature="4036:4372" ph="{...}" />
+                <marker date="1488130640024" expanded="true" signature="4425:4769" ph="{...}" />
+                <marker date="1488130640024" expanded="true" signature="4814:5097" ph="{...}" />
+                <marker date="1488130640024" expanded="true" signature="5153:6062" ph="{...}" />
+                <marker date="1488130640024" expanded="true" signature="6091:6727" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/WorldGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MeshCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/VoxelEngine/PolygonGenerator.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="2576" />
+    <option name="height" value="1416" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build-fight (3 projects)" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build-fight (3 projects)" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assembly-CSharp" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assets" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build-fight (3 projects)" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assembly-CSharp" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assets" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Scripts" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build-fight (3 projects)" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assembly-CSharp" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assets" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Scripts" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VoxelEngine" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build-fight (3 projects)" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assembly-CSharp" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="MeshC&#9;null&#9;null&#10;Worl&#9;null&#9;null" />
+  </component>
+  <component name="RunManager" selected=".NET Project.Default">
+    <configuration default="true" type="DotNetProject" factoryName=".NET Project">
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <envs />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue=".NET Project.Default" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9641699a-c3e9-4aed-9b1d-163595b2b149" name="Default" comment="" />
+      <created>1488049657716</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1488049657716</updated>
+      <workItem from="1488049659820" duration="1446000" />
+      <workItem from="1488129405075" duration="1767000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3213000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <layout>
+      <window_info id="Change Signature" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/WorldGenerator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1488049711923" expanded="true" signature="64:185" ph="{...}" />
+            <marker date="1488049711923" expanded="true" signature="114:121" ph="{...}" />
+            <marker date="1488049711923" expanded="true" signature="176:183" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/WorldGenerator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <marker date="1488049711923" expanded="true" signature="64:185" ph="{...}" />
+            <marker date="1488049711923" expanded="true" signature="114:121" ph="{...}" />
+            <marker date="1488049711923" expanded="true" signature="176:183" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MeshCreator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="5" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding>
+            <marker date="1488129712396" expanded="true" signature="6:90" ph="..." />
+            <marker date="1488129712396" expanded="true" signature="130:3105" ph="{...}" />
+            <marker date="1488129712396" expanded="true" signature="177:3103" ph="{...}" />
+            <marker date="1488129712396" expanded="true" signature="372:1148" ph="{...}" />
+            <marker date="1488129712396" expanded="true" signature="422:488" ph="{...}" />
+            <marker date="1488129712396" expanded="true" signature="505:576" ph="{...}" />
+            <marker date="1488129712396" expanded="true" signature="700:918" ph="{...}" />
+            <marker date="1488129712396" expanded="true" signature="1190:1606" ph="{...}" />
+            <marker date="1488129712396" expanded="true" signature="1345:1566" ph="{...}" />
+            <marker date="1488129712396" expanded="true" signature="1643:2455" ph="{...}" />
+            <marker date="1488129712396" expanded="true" signature="1687:1740" ph="{...}" />
+            <marker date="1488129712396" expanded="true" signature="1807:2200" ph="{...}" />
+            <marker date="1488129712396" expanded="true" signature="2242:2294" ph="{...}" />
+            <marker date="1488129712396" expanded="true" signature="2496:3097" ph="{...}" />
+            <marker date="1488129712396" expanded="true" signature="2666:2793" ph="{...}" />
+            <marker date="1488129712396" expanded="true" signature="2939:3012" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/VoxelEngine/PolygonGenerator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="43" column="29" lean-forward="false" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
+          <folding>
+            <marker date="1488130640024" expanded="true" signature="50:6736" ph="{...}" />
+            <marker date="1488130640024" expanded="true" signature="63:143" ph="..." />
+            <marker date="1488130640024" expanded="true" signature="195:6733" ph="{...}" />
+            <marker date="1488130640024" expanded="true" signature="898:1089" ph="{...}" />
+            <marker date="1488130640024" expanded="true" signature="1112:1250" ph="{...}" />
+            <marker date="1488130640024" expanded="true" signature="1136:1240" ph="{...}" />
+            <marker date="1488130640024" expanded="true" signature="1323:1425" ph="{...}" />
+            <marker date="1488130640024" expanded="true" signature="1452:2423" ph="{...}" />
+            <marker date="1488130640024" expanded="true" signature="1545:2413" ph="{...}" />
+            <marker date="1488130640024" expanded="true" signature="1915:2399" ph="{...}" />
+            <marker date="1488130640024" expanded="true" signature="1949:2297" ph="{...}" />
+            <marker date="1488130640024" expanded="true" signature="2048:2135" ph="{...}" />
+            <marker date="1488130640024" expanded="true" signature="2193:2274" ph="{...}" />
+            <marker date="1488130640024" expanded="true" signature="2315:2379" ph="{...}" />
+            <marker date="1488130640024" expanded="true" signature="2449:2948" ph="{...}" />
+            <marker date="1488130640024" expanded="true" signature="2504:2938" ph="{...}" />
+            <marker date="1488130640024" expanded="true" signature="2563:2924" ph="{...}" />
+            <marker date="1488130640024" expanded="true" signature="2606:2906" ph="{...}" />
+            <marker date="1488130640024" expanded="true" signature="2698:2778" ph="{...}" />
+            <marker date="1488130640024" expanded="true" signature="2804:2884" ph="{...}" />
+            <marker date="1488130640024" expanded="true" signature="2983:3158" ph="{...}" />
+            <marker date="1488130640024" expanded="true" signature="3068:3115" ph="{...}" />
+            <marker date="1488130640024" expanded="true" signature="3198:4780" ph="{...}" />
+            <marker date="1488130640024" expanded="true" signature="3251:3588" ph="{...}" />
+            <marker date="1488130640024" expanded="true" signature="3639:3984" ph="{...}" />
+            <marker date="1488130640024" expanded="true" signature="4036:4372" ph="{...}" />
+            <marker date="1488130640024" expanded="true" signature="4425:4769" ph="{...}" />
+            <marker date="1488130640024" expanded="true" signature="4814:5097" ph="{...}" />
+            <marker date="1488130640024" expanded="true" signature="5153:6062" ph="{...}" />
+            <marker date="1488130640024" expanded="true" signature="6091:6727" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
