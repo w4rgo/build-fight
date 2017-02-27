@@ -5,7 +5,7 @@
     using System.Collections.Generic;
 
     public class PolygonGenerator : MonoBehaviour {
-
+        //studentgamedev tutorial 4
         public List<Vector3> newVertices = new List<Vector3>();
         public List<int> newTriangles = new List<int>();
         public List<Vector2> newUV = new List<Vector2>();
@@ -54,7 +54,7 @@
         }
 
         void GenTerrain(){
-            blocks=new byte[96,128];
+            blocks=new byte[32,32];
 
             for(int px=0;px<blocks.GetLength(0);px++){
                 int stone= NoiseInt(px,0, 80,15,1);
@@ -68,25 +68,40 @@
                 dirt+=75;
 
 
+
+
                 for(int py=0;py<blocks.GetLength(1);py++){
-                    if(py<stone){
-                        blocks[px, py]=1;
 
-                        if(NoiseInt(px,py,12,16,1)>10){  //dirt spots
-                            blocks[px,py]=2;
+                    if (py < blocks.GetLength(1) / 2)
+                    {
+                        if (py < stone)
+                        {
+                            blocks[px, py] = 1;
+
+                            if (NoiseInt(px, py, 12, 16, 1) > 10)
+                            {
+                                //dirt spots
+                                blocks[px, py] = 2;
+
+                            }
+
+                            if (NoiseInt(px, py * 2, 16, 14, 1) > 10)
+                            {
+                                //Caves
+                                blocks[px, py] = 0;
+
+                            }
 
                         }
-
-                        if(NoiseInt(px,py*2,16,14,1)>10){ //Caves
-                            blocks[px,py]=0;
-
+                        else if (py < dirt)
+                        {
+                            blocks[px, py] = 2;
                         }
-
-                    } else if(py<dirt) {
-                        blocks[px,py]=2;
                     }
-
-
+                    else
+                    {
+                        blocks[px, py] = 0;
+                    }
                 }
             }
         }
