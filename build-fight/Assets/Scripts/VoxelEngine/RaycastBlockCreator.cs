@@ -1,4 +1,7 @@
-﻿namespace Assets.Scripts.CustomObjects.VoxelEngine
+﻿using System.Linq;
+using UnityEditor;
+
+namespace Assets.Scripts.CustomObjects.VoxelEngine
 {
     using UnityEngine;
     using System.Collections;
@@ -19,26 +22,30 @@
 
         // Update is called once per frame
         public void CreateBlock () {
-            RaycastHit hit;
-            float distance=Vector3.Distance(transform.position,target.transform.position);
+            Vector2 point = new Vector2(transform.position.x, transform.position.y);
 
-            if( Physics.Raycast(transform.position, (target.transform.position - transform.position).normalized, out hit, distance , layerMask)){
+            Collider [] colliders = Physics.OverlapBox(transform.position, transform.localScale/2 );
 
-                Debug.DrawLine(transform.position,hit.point,Color.red);
-
-                Vector2 point= new Vector2(hit.point.x, hit.point.y);
-                point+=(new Vector2(hit.normal.x,hit.normal.y))*0.5f;
-
-                Debug.DrawLine(hit.point,new Vector3(point.x,point.y,hit.point.z),Color.magenta);
-
-                var x = Mathf.RoundToInt(point.x-.5f);
-                var y = Mathf.RoundToInt(point.y+.5f);
-                tScript.blocks[x,y]=1;
-                tScript.update=true;
-
-            } else {
-                Debug.DrawLine(transform.position,target.transform.position,Color.blue);
+            if (colliders.Length > 0)
+            {
+                foreach (var collider in colliders)
+                {
+                    if (collider.gameObject.GetComponent<PolygonGenerator>() == null)
+                    {
+                        return;
+                    }
+                }
+                var x = Mathf.RoundToInt(point.x - .5f);
+                var y = Mathf.RoundToInt(point.y + .5f);
+                tScript.blocks[x, y] = 1;
+                tScript.update = true;
             }
+
+        }
+
+        private void OnDrawGizmos()
+        {
+            Gizmos.DrawCube(transform.position, transform.localScale);
         }
     }
 }

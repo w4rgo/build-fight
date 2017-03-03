@@ -28,7 +28,7 @@ namespace Assets.Scripts.Character
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
             }
 
-            var mouseClick = CrossPlatformInputManager.GetMouseButtonDown(0);
+            var mouseClick = CrossPlatformInputManager.GetMouseButton(0);
             if (mouseClick)
             {
                 Debug.Log("pressed");
