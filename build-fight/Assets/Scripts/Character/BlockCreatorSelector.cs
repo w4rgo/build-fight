@@ -12,7 +12,7 @@ namespace Assets.Scripts.Character
             var mousePos = Camera.main.ScreenToWorldPoint(pos);
             transform.position =  new Vector3(Mathf.Round(mousePos.x)+0.5f,
                 Mathf.Round(mousePos.y)+0.5f,
-                Mathf.Round(mousePos.z)+0.5f);
+                transform.position.z);
 
         }
     }

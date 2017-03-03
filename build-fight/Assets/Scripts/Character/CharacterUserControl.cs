@@ -28,11 +28,14 @@ namespace Assets.Scripts.Character
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
             }
 
-            var mouseClick = CrossPlatformInputManager.GetMouseButton(0);
-            if (mouseClick)
+            if (CrossPlatformInputManager.GetMouseButton(0))
             {
-                Debug.Log("pressed");
                 blockCreator.CreateBlock();
+            }
+
+            if (CrossPlatformInputManager.GetMouseButton(2))
+            {
+                blockCreator.DestructBlock();
             }
         }
 
