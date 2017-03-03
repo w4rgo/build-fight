@@ -108,6 +108,21 @@ namespace UnityStandardAssets.CrossPlatformInput
 			return activeInput.GetAxis(name, raw);
 		}
 
+        //Mouse handling
+	    public static bool GetMouseButton(int id)
+	    {
+	        return Input.GetMouseButton(id);
+	    }
+
+	    public static bool GetMouseButtonDown(int id)
+	    {
+	        return Input.GetMouseButtonDown(id);
+	    }
+
+	    public static bool GetMouseButtonUp(int id)
+	    {
+	        return Input.GetMouseButtonUp(id);
+	    }
 
 		// -- Button handling --
 		public static bool GetButton(string name)

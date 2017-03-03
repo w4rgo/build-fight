@@ -28,6 +28,21 @@ namespace UnityStandardAssets.CrossPlatformInput.PlatformSpecific
             return Input.GetButtonUp(name);
         }
 
+        public override bool GetMouseButton(int id)
+        {
+            return Input.GetMouseButton(id);
+        }
+
+        public override bool GetMouseButtonDown(int id)
+        {
+            return Input.GetMouseButtonDown(id);
+        }
+
+        public override bool GetMouseButtonUp(int id)
+        {
+            return Input.GetMouseButtonUp(id);
+        }
+
 
         public override void SetButtonDown(string name)
         {

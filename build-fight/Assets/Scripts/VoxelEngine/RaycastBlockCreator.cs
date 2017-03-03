@@ -18,12 +18,8 @@
         }
 
         // Update is called once per frame
-        void Update () {
-
-
-
+        public void CreateBlock () {
             RaycastHit hit;
-
             float distance=Vector3.Distance(transform.position,target.transform.position);
 
             if( Physics.Raycast(transform.position, (target.transform.position - transform.position).normalized, out hit, distance , layerMask)){
@@ -35,7 +31,9 @@
 
                 Debug.DrawLine(hit.point,new Vector3(point.x,point.y,hit.point.z),Color.magenta);
 
-                tScript.blocks[Mathf.RoundToInt(point.x-.5f),Mathf.RoundToInt(point.y+.5f)]=1;
+                var x = Mathf.RoundToInt(point.x-.5f);
+                var y = Mathf.RoundToInt(point.y+.5f);
+                tScript.blocks[x,y]=1;
                 tScript.update=true;
 
             } else {

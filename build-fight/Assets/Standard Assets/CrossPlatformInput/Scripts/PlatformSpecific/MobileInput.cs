@@ -29,6 +29,11 @@ namespace UnityStandardAssets.CrossPlatformInput.PlatformSpecific
         }
 
 
+        public override bool GetMouseButtonUp(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public override void SetButtonDown(string name)
         {
             if (!m_VirtualButtons.ContainsKey(name))
@@ -110,6 +115,16 @@ namespace UnityStandardAssets.CrossPlatformInput.PlatformSpecific
 
             AddButton(name);
             return m_VirtualButtons[name].GetButtonUp;
+        }
+
+        public override bool GetMouseButton(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override bool GetMouseButtonDown(int id)
+        {
+            throw new NotImplementedException();
         }
 
 

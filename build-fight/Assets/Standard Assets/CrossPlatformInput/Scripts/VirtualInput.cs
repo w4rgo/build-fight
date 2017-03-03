@@ -123,6 +123,10 @@ namespace UnityStandardAssets.CrossPlatformInput
         public abstract bool GetButtonDown(string name);
         public abstract bool GetButtonUp(string name);
 
+        public abstract bool GetMouseButton(int id);
+        public abstract bool GetMouseButtonDown(int id);
+        public abstract bool GetMouseButtonUp(int id);
+
         public abstract void SetButtonDown(string name);
         public abstract void SetButtonUp(string name);
         public abstract void SetAxisPositive(string name);
