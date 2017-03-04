@@ -11,7 +11,9 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
         private PolygonGenerator tScript;
         private LayerMask layerMask = (1 << 0);
         private byte[,] visited;
+
         private int tooMuch = 0;
+
         // Use this for initialization
         void Start()
         {
@@ -62,22 +64,46 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
                 tScript.update = true;
 
                 visited = new byte[32, 32];
-                Debug.Log("Connected1 : " + CalcConnected(x+1,y+1));
+                Debug.Log("Connected1 : " + CalcConnected(x, y + 1, Color.black));
                 visited = new byte[32, 32];
 
-                Debug.Log("Connected 2: " + CalcConnected(x-1,y+1));
+                Debug.Log("Connected 2: " + CalcConnected(x - 1, y, Color.cyan));
                 visited = new byte[32, 32];
 
-                Debug.Log("Connected 3: " + CalcConnected(x+1,y-1));
+                Debug.Log("Connected 3: " + CalcConnected(x + 1, y, Color.green));
                 visited = new byte[32, 32];
 
-                Debug.Log("Connected4 : " + CalcConnected(x-1,y-1));
+                Debug.Log("Connected4 : " + CalcConnected(x, y - 1, Color.blue));
+
+
+                PaintCross(x, y, Color.red);
+
+                var count = 0;
+                for (int i = 0; i < tScript.blocks.GetLength(0); i++)
+                {
+                    for (int j = 0; j < tScript.blocks.GetLength(1); j++)
+                    {
+                        if (tScript.blocks[i, j] != 0)
+                        {
+                            count++;
+                        }
+                    }
+                }
+                Debug.Log("REAL TOTAL: " + count);
             }
         }
 
-        private int CalcConnected(int x, int y)
+        private static void PaintCross(int x, int y, Color color)
         {
+            Debug.DrawLine(new Vector3(x, y, -10), new Vector3(x + 1, y - 1, -10), color);
+            Debug.DrawLine(new Vector3(x, y - 1, -10), new Vector3(x + 1, y, -10), color);
 
+        }
+
+
+        private int CalcConnected(int x, int y, Color debugColor)
+        {
+            PaintCross(x, y, debugColor);
             tooMuch++;
             if (tooMuch > 10000)
             {
@@ -90,77 +116,45 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
                 return 0;
             }
             var added = 0;
-            if (x > 0 && y > 0 && visited[x - 1, y - 1] == 0)
+            if (y > 0 && visited[x, y - 1] == 0)
             {
-                if (tScript.blocks[x - 1, y - 1] != 0)
+                if (tScript.blocks[x, y - 1] != 0)
                 {
-                    visited[x - 1, y - 1] = 1;
-                    added += 1 + CalcConnected(x - 1, y - 1);
+                    visited[x, y - 1] = 1;
+                    added += 1 + CalcConnected(x, y - 1, debugColor);
                 }
             }
 
-            if (x > 0 && y < tScript.blocks.GetLength(1) - 1 && visited[x - 1, y + 1] == 0)
+            if (y < tScript.blocks.GetLength(1) - 1 && visited[x, y + 1] == 0)
             {
-                if (tScript.blocks[x - 1, y + 1] != 0)
+                if (tScript.blocks[x, y + 1] != 0)
                 {
-                    visited[x - 1, y + 1] = 1;
-                    added += 1 + CalcConnected(x - 1, y + 1);
+                    visited[x, y + 1] = 1;
+                    added += 1 + CalcConnected(x, y + 1, debugColor);
                 }
             }
 
-            if (x < tScript.blocks.GetLength(0) - 1 && y > 0 && visited[x + 1, y - 1] == 0)
+            if (x < tScript.blocks.GetLength(0) - 1 && visited[x + 1, y] == 0)
             {
-                if (tScript.blocks[x + 1, y - 1] != 0)
+                if (tScript.blocks[x + 1, y] != 0)
                 {
-                    visited[x + 1, y - 1] = 1;
-                    added += 1 + CalcConnected(x + 1, y - 1);
+                    visited[x + 1, y] = 1;
+                    added += 1 + CalcConnected(x + 1, y, debugColor);
                 }
             }
 
 
-            if (x < tScript.blocks.GetLength(0) - 1 && y < tScript.blocks.GetLength(1) - 1 && visited[x + 1, y + 1] == 0)
+            if (x > 0 &&
+                visited[x - 1, y] == 0)
             {
-                if (tScript.blocks[x + 1, y + 1] != 0)
+                if (tScript.blocks[x - 1, y] != 0)
                 {
-                    visited[x + 1, y + 1] = 1;
-                    added += 1 + CalcConnected(x + 1, y + 1);
+                    visited[x - 1, y] = 1;
+                    added += 1 + CalcConnected(x - 1, y, debugColor);
                 }
             }
 
             return added;
-        }
-
-        private void CalculateConnectedParts()
-        {
-            var connected = 0;
-            for (int i = 0; i < tScript.blocks.GetLength(0); i++)
-            {
-                for (int j = 0; j < tScript.blocks.GetLength(1); j++)
-                {
-                    Debug.Log(i + " " + j);
-                    if (i > 0 && i < tScript.blocks.GetLength(0) - 1 && j > 0 && j < tScript.blocks.GetLength(1) - 1)
-                    {
-                        if (tScript.blocks[i - 1, j - 1] != 0)
-                        {
-                            connected++;
-                        }
-                        else if (tScript.blocks[i - 1, j + 1] != 0)
-                        {
-                            connected++;
-                        }
-                        else if (tScript.blocks[i + 1, j - 1] != 0)
-                        {
-                            connected++;
-                        }
-                        else if (tScript.blocks[i + 1, j + 1] != 0)
-                        {
-                            connected++;
-                        }
-                    }
-                }
-            }
-            Debug.Log("Connected blocks:" + connected);
-            connected = 0;
         }
 
         private void OnDrawGizmos()
