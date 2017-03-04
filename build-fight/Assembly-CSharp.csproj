@@ -66,6 +66,7 @@
      <Compile Include="Assets\Scripts\Character\CharacterUserControl.cs" />
      <Compile Include="Assets\Scripts\Character\PlatformerCharacter.cs" />
      <Compile Include="Assets\Scripts\MeshCreator.cs" />
+     <Compile Include="Assets\Scripts\VoxelEngine\BlockTextureInfo.cs" />
      <Compile Include="Assets\Scripts\VoxelEngine\PolygonGenerator.cs" />
      <Compile Include="Assets\Scripts\VoxelEngine\RaycastBlockCreator.cs" />
      <Compile Include="Assets\Scripts\WorldGenerator.cs" />

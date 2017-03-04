@@ -4,7 +4,12 @@
     using System.Collections;
     using System.Collections.Generic;
 
-    public class PolygonGenerator : MonoBehaviour {
+    public class PolygonGenerator : MonoBehaviour
+    {
+
+        public Dictionary<int, Vector2> textureVectorMap = new Dictionary<int, Vector2>();
+
+
         //studentgamedev tutorial 4
         public List<Vector3> newVertices = new List<Vector3>();
         public List<int> newTriangles = new List<int>();
@@ -17,9 +22,9 @@
         private Mesh mesh;
         private MeshCollider col;
 
-        private float tUnit = 0.25f;
-        private Vector2 tStone = new Vector2 (1, 0);
-        private Vector2 tGrass = new Vector2 (0, 1);
+        public float tUnit = 0.25f;
+        public Vector2 tStone = new Vector2 (1, 0);
+        public Vector2 tGrass = new Vector2 (0, 1);
 
 
         public byte[,] blocks;
@@ -31,6 +36,10 @@
         void Start () {
             mesh = GetComponent<MeshFilter> ().mesh;
             col = GetComponent<MeshCollider> ();
+
+
+            textureVectorMap[1] = tStone;
+            textureVectorMap[2] = tGrass;
 
             GenTerrain();
             BuildMesh();

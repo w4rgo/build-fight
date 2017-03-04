@@ -1,9 +1,13 @@
-﻿using System.Linq;
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEditor;
 
 namespace Assets.Scripts.CustomObjects.VoxelEngine
 {
     using UnityEngine;
+
 
     public class RaycastBlockCreator : MonoBehaviour
     {
@@ -12,6 +16,8 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
         private LayerMask layerMask = (1 << 0);
         private byte[,] visited;
 
+        public Sprite matTexture;
+//        public Texture2D matTexture;
         private int tooMuch = 0;
 
         // Use this for initialization
@@ -63,65 +69,144 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
                 tScript.blocks[x, y] = 0;
                 tScript.update = true;
 
-                visited = new byte[32, 32];
-                Debug.Log("Connected1 : " + CalcConnected(x, y + 1, Color.black));
-                visited = new byte[32, 32];
-
-                Debug.Log("Connected 2: " + CalcConnected(x - 1, y, Color.cyan));
-                visited = new byte[32, 32];
-
-                Debug.Log("Connected 3: " + CalcConnected(x + 1, y, Color.green));
-                visited = new byte[32, 32];
-
-                Debug.Log("Connected4 : " + CalcConnected(x, y - 1, Color.blue));
-
+                CollapseDisconnectedLandmasses(x, y);
 
                 PaintCross(x, y, Color.red);
 
-                var count = 0;
-                for (int i = 0; i < tScript.blocks.GetLength(0); i++)
+                CalculateRealtotal();
+            }
+        }
+
+        private void CollapseDisconnectedLandmasses(int x, int y)
+        {
+            var upLandmass = ProcessLandMass(x, y + 1, Color.black);
+            var leftLandMass = ProcessLandMass(x - 1, y, Color.cyan);
+            var rightLandmass = ProcessLandMass(x + 1, y, Color.green);
+            var downLandmass = ProcessLandMass(x, y - 1, Color.blue);
+
+            var biggerLandmassCount = Math.Max(Math.Max(upLandmass.Count, leftLandMass.Count),
+                Math.Max(rightLandmass.Count, downLandmass.Count));
+
+            if (upLandmass.Count < biggerLandmassCount)
+            {
+                CollapseLandMass(upLandmass);
+            }
+            if (leftLandMass.Count < biggerLandmassCount)
+            {
+                CollapseLandMass(leftLandMass);
+            }
+            if (rightLandmass.Count < biggerLandmassCount)
+            {
+                CollapseLandMass(rightLandmass);
+            }
+            if (downLandmass.Count < biggerLandmassCount)
+            {
+                CollapseLandMass(downLandmass);
+            }
+
+            Debug.Log("The bigger landmass count is : " + biggerLandmassCount);
+        }
+
+        private void CollapseLandMass(List<BlockInfo> landmass)
+        {
+            Debug.Log("Collapsing landmass with blocks: " + landmass.Count);
+            foreach (var block in landmass)
+            {
+                tScript.blocks[(int) block.Location.x, (int) block.Location.y] = 0;
+
+                var ragdollCube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+                ragdollCube.transform.position = new Vector3(block.Location.x + 0.5f, block.Location.y - 0.5f);
+                var rigidBody = ragdollCube.AddComponent<Rigidbody>();
+                ragdollCube.AddComponent<Collider>();
+
+                ragdollCube.GetComponent<MeshRenderer>().material = tScript.GetComponent<Material>();
+
+
+//                newUV.Add(new Vector2 (tUnit * texture.x, tUnit * texture.y + tUnit));
+//                newUV.Add(new Vector2 (tUnit * texture.x + tUnit, tUnit * texture.y + tUnit));
+//                newUV.Add(new Vector2 (tUnit * texture.x + tUnit, tUnit * texture.y));
+//                newUV.Add(new Vector2 (tUnit * texture.x, tUnit * texture.y));
+
+                var textureVector = tScript.textureVectorMap[block.Type];
+
+                var textureVectorX = (int) textureVector.x;
+                var textureVectorY = (int) textureVector.y;
+
+                Debug.Log(textureVector);
+
+
+                var newTexture = new Texture2D(32, 32);
+                newTexture.SetPixels(0,0,32,32, matTexture.texture.GetPixels(0,0,32,32));
+
+                rigidBody.constraints = RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationX;
+//                ragdollCube.GetComponent<MeshRenderer>().material = tScript.GetComponent<Material>();
+                ragdollCube.GetComponent<MeshRenderer>().material.mainTexture = newTexture;
+
+                StartCoroutine(DestroyRagdollCube(ragdollCube));
+            }
+        }
+
+        private IEnumerator DestroyRagdollCube(GameObject ragdollCube)
+        {
+            yield return new WaitForSeconds(Random.Range(3, 6));
+
+            Destroy(ragdollCube);
+        }
+
+        private void CalculateRealtotal()
+        {
+            var count = 0;
+            for (int i = 0; i < tScript.blocks.GetLength(0); i++)
+            {
+                for (int j = 0; j < tScript.blocks.GetLength(1); j++)
                 {
-                    for (int j = 0; j < tScript.blocks.GetLength(1); j++)
+                    if (tScript.blocks[i, j] != 0)
                     {
-                        if (tScript.blocks[i, j] != 0)
-                        {
-                            count++;
-                        }
+                        count++;
                     }
                 }
-                Debug.Log("REAL TOTAL: " + count);
             }
+            Debug.Log("REAL TOTAL: " + count);
+        }
+
+        private List<BlockInfo> ProcessLandMass(int x, int y, Color color)
+        {
+            visited = new byte[32, 32];
+            var connectedLandmass = CalcConnected(x, y, color);
+            Debug.Log("Connected1 : " + connectedLandmass.Count);
+            return connectedLandmass;
         }
 
         private static void PaintCross(int x, int y, Color color)
         {
             Debug.DrawLine(new Vector3(x, y, -10), new Vector3(x + 1, y - 1, -10), color);
             Debug.DrawLine(new Vector3(x, y - 1, -10), new Vector3(x + 1, y, -10), color);
-
         }
 
 
-        private int CalcConnected(int x, int y, Color debugColor)
+        private List<BlockInfo> CalcConnected(int x, int y, Color debugColor)
         {
+            visited[x, y] = 1;
             PaintCross(x, y, debugColor);
-            tooMuch++;
-            if (tooMuch > 10000)
-            {
-                tooMuch = 0;
-                Debug.Log("it was too much");
-                return 0;
-            }
+//            tooMuch++;
+//            if (tooMuch > 10000)
+//            {
+//                tooMuch = 0;
+//                Debug.Log("it was too much");
+//                return new List<Vector2>();
+//            }
             if (tScript.blocks[x, y] == 0)
             {
-                return 0;
+                return new List<BlockInfo>();
             }
-            var added = 0;
+
+            var added = new List<BlockInfo>();
+            added.Add(new BlockInfo(tScript.blocks[x, y], new Vector2(x, y)));
             if (y > 0 && visited[x, y - 1] == 0)
             {
                 if (tScript.blocks[x, y - 1] != 0)
                 {
-                    visited[x, y - 1] = 1;
-                    added += 1 + CalcConnected(x, y - 1, debugColor);
+                    added.AddRange(CalcConnected(x, y - 1, debugColor));
                 }
             }
 
@@ -129,8 +214,7 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
             {
                 if (tScript.blocks[x, y + 1] != 0)
                 {
-                    visited[x, y + 1] = 1;
-                    added += 1 + CalcConnected(x, y + 1, debugColor);
+                    added.AddRange(CalcConnected(x, y + 1, debugColor));
                 }
             }
 
@@ -138,28 +222,40 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
             {
                 if (tScript.blocks[x + 1, y] != 0)
                 {
-                    visited[x + 1, y] = 1;
-                    added += 1 + CalcConnected(x + 1, y, debugColor);
+                    added.AddRange(CalcConnected(x + 1, y, debugColor));
                 }
             }
-
-
-            if (x > 0 &&
-                visited[x - 1, y] == 0)
+            if (x > 0 && visited[x - 1, y] == 0)
             {
                 if (tScript.blocks[x - 1, y] != 0)
                 {
-                    visited[x - 1, y] = 1;
-                    added += 1 + CalcConnected(x - 1, y, debugColor);
+                    added.AddRange(CalcConnected(x - 1, y, debugColor));
                 }
             }
 
             return added;
         }
+    }
 
-        private void OnDrawGizmos()
+    public class BlockInfo
+    {
+        private int type;
+        private Vector2 location;
+
+        public BlockInfo(int type, Vector2 location)
         {
-            Gizmos.DrawCube(transform.position, transform.localScale);
+            this.type = type;
+            this.location = location;
+        }
+
+        public int Type
+        {
+            get { return type; }
+        }
+
+        public Vector2 Location
+        {
+            get { return location; }
         }
     }
 }
