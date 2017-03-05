@@ -58,6 +58,7 @@
         public bool IsOutOfBounds(int x, int y)
         {
             return x >= 0 && y >= 0 && x < blocks.GetLength(0) && y < blocks.GetLength(1);
+
         }
 
         int NoiseInt (int x, int y, float scale, float mag, float exp){

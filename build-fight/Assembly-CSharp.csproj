@@ -72,6 +72,7 @@
      <Compile Include="Assets\Scripts\Pooling\Singleton.cs" />
      <Compile Include="Assets\Scripts\VoxelEngine\BlockTextureInfo.cs" />
      <Compile Include="Assets\Scripts\VoxelEngine\PolygonGenerator.cs" />
+     <Compile Include="Assets\Scripts\VoxelEngine\RagdollCube.cs" />
      <Compile Include="Assets\Scripts\VoxelEngine\RaycastBlockCreator.cs" />
      <Compile Include="Assets\Scripts\WorldGenerator.cs" />
      <None Include="Assets\DarkRift\DarkRift\Plugins\Readme.txt" />

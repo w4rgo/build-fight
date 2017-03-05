@@ -114,21 +114,17 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
 
                 var ragdollCube = PoolManager.SpawnObject(ragdollCubePrefab, position, Quaternion.identity);
                 var rigidBody = ragdollCube.GetComponent<Rigidbody>();
+                var ragdollCubeScript = ragdollCube.GetComponent<RagdollCube>();
+                ragdollCubeScript.terrain = tScript.gameObject;
                 var textureVector = tScript.textureVectorMap[block.Type];
                 rigidBody.constraints = RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationX;
                 ragdollCube.GetComponent<Renderer>().material.mainTextureOffset = textureVector * tScript.tUnit;
                 ragdollCube.GetComponent<Renderer>().material.mainTextureScale =
                     new Vector2(tScript.tUnit, tScript.tUnit);
-                StartCoroutine(DestroyRagdollCube(ragdollCube));
+                //StartCoroutine(DestroyRagdollCube(ragdollCube));
             }
         }
 
-        private IEnumerator DestroyRagdollCube(GameObject ragdollCube)
-        {
-            yield return new WaitForSeconds(Random.Range(3, 6));
-
-            PoolManager.ReleaseObject(ragdollCube);
-        }
 
         private List<BlockInfo> ProcessLandMass(int x, int y, Color color)
         {

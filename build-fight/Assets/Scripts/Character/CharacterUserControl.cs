@@ -1,4 +1,3 @@
-using System;
 using Assets.Scripts.CustomObjects.VoxelEngine;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
