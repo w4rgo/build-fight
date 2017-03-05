@@ -1,4 +1,4 @@
-﻿﻿using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -39,8 +39,11 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
                 }
                 var x = Mathf.RoundToInt(point.x - .5f);
                 var y = Mathf.RoundToInt(point.y + .5f);
-                tScript.blocks[x, y] = 1;
-                tScript.update = true;
+                if (tScript.IsOutOfBounds(x,y))
+                {
+                    tScript.blocks[x, y] = 1;
+                    tScript.update = true;
+                }
             }
         }
 
@@ -61,11 +64,15 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
                 }
                 var x = Mathf.RoundToInt(point.x - .5f);
                 var y = Mathf.RoundToInt(point.y + .5f);
-                tScript.blocks[x, y] = 0;
-                tScript.update = true;
 
-                CollapseDisconnectedLandmasses(x, y);
-                PaintCross(x, y, Color.red);
+                if (tScript.IsOutOfBounds(x,y))
+                {
+                    tScript.blocks[x, y] = 0;
+                    tScript.update = true;
+
+                    CollapseDisconnectedLandmasses(x, y);
+                    PaintCross(x, y, Color.red);
+                }
             }
         }
 
@@ -106,11 +113,12 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
                 var position = new Vector3(block.Location.x + 0.5f, block.Location.y - 0.5f);
 
                 var ragdollCube = PoolManager.SpawnObject(ragdollCubePrefab, position, Quaternion.identity);
-                var rigidBody = ragdollCube.AddComponent<Rigidbody>();
+                var rigidBody = ragdollCube.GetComponent<Rigidbody>();
                 var textureVector = tScript.textureVectorMap[block.Type];
                 rigidBody.constraints = RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationX;
-                ragdollCube.GetComponent<Renderer>().material.mainTextureOffset = textureVector*tScript.tUnit;
-                ragdollCube.GetComponent<Renderer>().material.mainTextureScale = new Vector2(tScript.tUnit,tScript.tUnit);
+                ragdollCube.GetComponent<Renderer>().material.mainTextureOffset = textureVector * tScript.tUnit;
+                ragdollCube.GetComponent<Renderer>().material.mainTextureScale =
+                    new Vector2(tScript.tUnit, tScript.tUnit);
                 StartCoroutine(DestroyRagdollCube(ragdollCube));
             }
         }
@@ -138,46 +146,54 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
 
         private List<BlockInfo> CalcConnected(int x, int y, Color debugColor)
         {
-            visited[x, y] = 1;
-            PaintCross(x, y, debugColor);
+            var added = new List<BlockInfo>();
 
-            if (tScript.blocks[x, y] == 0)
+            if (tScript.IsOutOfBounds(x,y))
+            {
+                visited[x, y] = 1;
+                if (tScript.blocks[x, y] == 0)
+                {
+                    return new List<BlockInfo>();
+                }
+
+                added.Add(new BlockInfo(tScript.blocks[x, y], new Vector2(x, y)));
+                if (y > 0 && visited[x, y - 1] == 0)
+                {
+                    if (tScript.blocks[x, y - 1] != 0)
+                    {
+                        added.AddRange(CalcConnected(x, y - 1, debugColor));
+                    }
+                }
+
+                if (y < tScript.blocks.GetLength(1) - 1 && visited[x, y + 1] == 0)
+                {
+                    if (tScript.blocks[x, y + 1] != 0)
+                    {
+                        added.AddRange(CalcConnected(x, y + 1, debugColor));
+                    }
+                }
+
+                if (x < tScript.blocks.GetLength(0) - 1 && visited[x + 1, y] == 0)
+                {
+                    if (tScript.blocks[x + 1, y] != 0)
+                    {
+                        added.AddRange(CalcConnected(x + 1, y, debugColor));
+                    }
+                }
+                if (x > 0 && visited[x - 1, y] == 0)
+                {
+                    if (tScript.blocks[x - 1, y] != 0)
+                    {
+                        added.AddRange(CalcConnected(x - 1, y, debugColor));
+                    }
+                }
+            }
+            else
             {
                 return new List<BlockInfo>();
             }
+            PaintCross(x, y, debugColor);
 
-            var added = new List<BlockInfo>();
-            added.Add(new BlockInfo(tScript.blocks[x, y], new Vector2(x, y)));
-            if (y > 0 && visited[x, y - 1] == 0)
-            {
-                if (tScript.blocks[x, y - 1] != 0)
-                {
-                    added.AddRange(CalcConnected(x, y - 1, debugColor));
-                }
-            }
-
-            if (y < tScript.blocks.GetLength(1) - 1 && visited[x, y + 1] == 0)
-            {
-                if (tScript.blocks[x, y + 1] != 0)
-                {
-                    added.AddRange(CalcConnected(x, y + 1, debugColor));
-                }
-            }
-
-            if (x < tScript.blocks.GetLength(0) - 1 && visited[x + 1, y] == 0)
-            {
-                if (tScript.blocks[x + 1, y] != 0)
-                {
-                    added.AddRange(CalcConnected(x + 1, y, debugColor));
-                }
-            }
-            if (x > 0 && visited[x - 1, y] == 0)
-            {
-                if (tScript.blocks[x - 1, y] != 0)
-                {
-                    added.AddRange(CalcConnected(x - 1, y, debugColor));
-                }
-            }
 
             return added;
         }
