@@ -66,6 +66,10 @@
      <Compile Include="Assets\Scripts\Character\CharacterUserControl.cs" />
      <Compile Include="Assets\Scripts\Character\PlatformerCharacter.cs" />
      <Compile Include="Assets\Scripts\MeshCreator.cs" />
+     <Compile Include="Assets\Scripts\Pooling\ObjectPool.cs" />
+     <Compile Include="Assets\Scripts\Pooling\ObjectPoolContainer.cs" />
+     <Compile Include="Assets\Scripts\Pooling\PoolManager.cs" />
+     <Compile Include="Assets\Scripts\Pooling\Singleton.cs" />
      <Compile Include="Assets\Scripts\VoxelEngine\BlockTextureInfo.cs" />
      <Compile Include="Assets\Scripts\VoxelEngine\PolygonGenerator.cs" />
      <Compile Include="Assets\Scripts\VoxelEngine\RaycastBlockCreator.cs" />

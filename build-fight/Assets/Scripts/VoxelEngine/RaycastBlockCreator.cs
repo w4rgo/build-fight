@@ -1,8 +1,6 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using UnityEditor;
 
 namespace Assets.Scripts.CustomObjects.VoxelEngine
 {
@@ -16,23 +14,20 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
         private LayerMask layerMask = (1 << 0);
         private byte[,] visited;
 
-        public Sprite matTexture;
-//        public Texture2D matTexture;
         private int tooMuch = 0;
 
-        // Use this for initialization
+        [SerializeField] private GameObject ragdollCubePrefab;
+
         void Start()
         {
+            PoolManager.WarmPool(ragdollCubePrefab, 100);
             tScript = terrain.GetComponent<PolygonGenerator>();
         }
 
-        // Update is called once per frame
         public void CreateBlock()
         {
             Vector2 point = new Vector2(transform.position.x, transform.position.y);
-
             Collider[] colliders = Physics.OverlapBox(transform.position, transform.localScale / 2);
-
             if (colliders.Length > 0)
             {
                 foreach (var collider in colliders)
@@ -70,10 +65,7 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
                 tScript.update = true;
 
                 CollapseDisconnectedLandmasses(x, y);
-
                 PaintCross(x, y, Color.red);
-
-                CalculateRealtotal();
             }
         }
 
@@ -103,45 +95,22 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
             {
                 CollapseLandMass(downLandmass);
             }
-
-            Debug.Log("The bigger landmass count is : " + biggerLandmassCount);
         }
 
         private void CollapseLandMass(List<BlockInfo> landmass)
         {
-            Debug.Log("Collapsing landmass with blocks: " + landmass.Count);
             foreach (var block in landmass)
             {
                 tScript.blocks[(int) block.Location.x, (int) block.Location.y] = 0;
 
-                var ragdollCube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-                ragdollCube.transform.position = new Vector3(block.Location.x + 0.5f, block.Location.y - 0.5f);
+                var position = new Vector3(block.Location.x + 0.5f, block.Location.y - 0.5f);
+
+                var ragdollCube = PoolManager.SpawnObject(ragdollCubePrefab, position, Quaternion.identity);
                 var rigidBody = ragdollCube.AddComponent<Rigidbody>();
-                ragdollCube.AddComponent<Collider>();
-
-                ragdollCube.GetComponent<MeshRenderer>().material = tScript.GetComponent<Material>();
-
-
-//                newUV.Add(new Vector2 (tUnit * texture.x, tUnit * texture.y + tUnit));
-//                newUV.Add(new Vector2 (tUnit * texture.x + tUnit, tUnit * texture.y + tUnit));
-//                newUV.Add(new Vector2 (tUnit * texture.x + tUnit, tUnit * texture.y));
-//                newUV.Add(new Vector2 (tUnit * texture.x, tUnit * texture.y));
-
                 var textureVector = tScript.textureVectorMap[block.Type];
-
-                var textureVectorX = (int) textureVector.x;
-                var textureVectorY = (int) textureVector.y;
-
-                Debug.Log(textureVector);
-
-
-                var newTexture = new Texture2D(32, 32);
-                newTexture.SetPixels(0,0,32,32, matTexture.texture.GetPixels(0,0,32,32));
-
                 rigidBody.constraints = RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationX;
-//                ragdollCube.GetComponent<MeshRenderer>().material = tScript.GetComponent<Material>();
-                ragdollCube.GetComponent<MeshRenderer>().material.mainTexture = newTexture;
-
+                ragdollCube.GetComponent<Renderer>().material.mainTextureOffset = textureVector*tScript.tUnit;
+                ragdollCube.GetComponent<Renderer>().material.mainTextureScale = new Vector2(tScript.tUnit,tScript.tUnit);
                 StartCoroutine(DestroyRagdollCube(ragdollCube));
             }
         }
@@ -150,30 +119,13 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
         {
             yield return new WaitForSeconds(Random.Range(3, 6));
 
-            Destroy(ragdollCube);
-        }
-
-        private void CalculateRealtotal()
-        {
-            var count = 0;
-            for (int i = 0; i < tScript.blocks.GetLength(0); i++)
-            {
-                for (int j = 0; j < tScript.blocks.GetLength(1); j++)
-                {
-                    if (tScript.blocks[i, j] != 0)
-                    {
-                        count++;
-                    }
-                }
-            }
-            Debug.Log("REAL TOTAL: " + count);
+            PoolManager.ReleaseObject(ragdollCube);
         }
 
         private List<BlockInfo> ProcessLandMass(int x, int y, Color color)
         {
             visited = new byte[32, 32];
             var connectedLandmass = CalcConnected(x, y, color);
-            Debug.Log("Connected1 : " + connectedLandmass.Count);
             return connectedLandmass;
         }
 
@@ -188,13 +140,7 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
         {
             visited[x, y] = 1;
             PaintCross(x, y, debugColor);
-//            tooMuch++;
-//            if (tooMuch > 10000)
-//            {
-//                tooMuch = 0;
-//                Debug.Log("it was too much");
-//                return new List<Vector2>();
-//            }
+
             if (tScript.blocks[x, y] == 0)
             {
                 return new List<BlockInfo>();
