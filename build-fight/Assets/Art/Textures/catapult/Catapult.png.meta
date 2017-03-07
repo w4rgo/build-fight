@@ -1,0 +1,174 @@
+fileFormatVersion: 2
+guid: be5c7238b2f943a43a433e2cff3a5636
+timeCreated: 1488844383
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Catapult_0
+    21300002: Catapult_1
+    21300004: Catapult_2
+    21300006: Catapult_3
+    21300008: Catapult_4
+    21300010: Catapult_5
+    21300012: Catapult_6
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Catapult_0
+      rect:
+        serializedVersion: 2
+        x: 45.19477
+        y: 507.67578
+        width: 490.13263
+        height: 72.86102
+      alignment: 9
+      pivot: {x: 0.49946737, y: 0.5054035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Catapult_1
+      rect:
+        serializedVersion: 2
+        x: 661.10626
+        y: 327.2124
+        width: 371.23468
+        height: 255.02216
+      alignment: 9
+      pivot: {x: 0.5007445, y: 0.5010843}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Catapult_2
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 438
+        width: 512
+        height: 60.99997
+      alignment: 9
+      pivot: {x: 0.5, y: 0.50000024}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Catapult_3
+      rect:
+        serializedVersion: 2
+        x: 50.572773
+        y: 307.57278
+        width: 117.572784
+        height: 118.70886
+      alignment: 9
+      pivot: {x: 0.51820856, y: 0.48797718}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Catapult_4
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 240
+        width: 61
+        height: 185.00003
+      alignment: 9
+      pivot: {x: 0.49999997, y: 0.49999994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Catapult_5
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 34
+        width: 61
+        height: 182.14558
+      alignment: 9
+      pivot: {x: 0.49999997, y: 0.50783557}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Catapult_6
+      rect:
+        serializedVersion: 2
+        x: 673.2817
+        y: 14.572758
+        width: 347.58228
+        height: 283.1456
+      alignment: 9
+      pivot: {x: 0.50410604, y: 0.51008123}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 97572910617797
+  assetBundleName: 
+  assetBundleVariant: 
