@@ -62,18 +62,53 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
                         return;
                     }
                 }
-                var x = Mathf.RoundToInt(point.x - .5f);
-                var y = Mathf.RoundToInt(point.y + .5f);
+                DestroyPoint(point);
+            }
+        }
 
-                if (tScript.IsOutOfBounds(x,y))
+        private void DestroyPoint(Vector2 point)
+        {
+            var x = Mathf.RoundToInt(point.x - .5f);
+            var y = Mathf.RoundToInt(point.y + .5f);
+
+            if (tScript.IsOutOfBounds(x, y))
+            {
+                tScript.blocks[x, y] = 0;
+                tScript.update = true;
+
+                CollapseDisconnectedLandmasses(x, y);
+                PaintCross(x, y, Color.red);
+            }
+        }
+
+        public void DestructAreaAroundCollision(Collision collision)
+        {
+
+            if (collision.gameObject.GetComponent<PolygonGenerator>() == null)
+            {
+                return;
+            }
+
+            var radius = 1;
+
+            var hit = collision.contacts[0];
+
+            var point = hit.point;
+
+            for (float i = hit.point.x - radius; i < hit.point.x + radius; i+= 0.5f)
+            {
+                for (float j =  hit.point.y - radius; j <  hit.point.y + radius; j+= 0.5f)
                 {
-                    tScript.blocks[x, y] = 0;
-                    tScript.update = true;
 
-                    CollapseDisconnectedLandmasses(x, y);
-                    PaintCross(x, y, Color.red);
+                    var vector2 = new Vector2(i, j);
+                    Debug.Log(vector2);
+
+                    DestroyPoint(vector2);
                 }
             }
+
+
+
         }
 
         private void CollapseDisconnectedLandmasses(int x, int y)
