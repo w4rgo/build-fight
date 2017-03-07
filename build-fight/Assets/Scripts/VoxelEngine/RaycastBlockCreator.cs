@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
+using Zenject;
 
 namespace Assets.Scripts.CustomObjects.VoxelEngine
 {
@@ -9,19 +9,24 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
 
     public class RaycastBlockCreator : MonoBehaviour
     {
-        public GameObject terrain;
-        private PolygonGenerator tScript;
+        private IWorld world;
         private LayerMask layerMask = (1 << 0);
         private byte[,] visited;
 
         private int tooMuch = 0;
 
+        [SerializeField] private WorldMeshView worldView;
         [SerializeField] private GameObject ragdollCubePrefab;
+
+        [Inject]
+        public void Init(IWorld world)
+        {
+            this.world = world;
+        }
 
         void Start()
         {
             PoolManager.WarmPool(ragdollCubePrefab, 100);
-            tScript = terrain.GetComponent<PolygonGenerator>();
         }
 
         public void CreateBlock()
@@ -32,17 +37,16 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
             {
                 foreach (var collider in colliders)
                 {
-                    if (collider.gameObject.GetComponent<PolygonGenerator>() == null)
+                    if (collider.gameObject.GetComponent<WorldMeshView>() == null)
                     {
                         return;
                     }
                 }
                 var x = Mathf.RoundToInt(point.x - .5f);
                 var y = Mathf.RoundToInt(point.y + .5f);
-                if (tScript.IsOutOfBounds(x,y))
+                if (world.IsOutOfBounds(x,y))
                 {
-                    tScript.blocks[x, y] = 1;
-                    tScript.update = true;
+                    world.SetBlock(x, y, 1);
                 }
             }
         }
@@ -57,7 +61,7 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
             {
                 foreach (var collider in colliders)
                 {
-                    if (collider.gameObject.GetComponent<PolygonGenerator>() == null)
+                    if (collider.gameObject.GetComponent<WorldMeshView>() == null)
                     {
                         return;
                     }
@@ -71,11 +75,9 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
             var x = Mathf.RoundToInt(point.x - .5f);
             var y = Mathf.RoundToInt(point.y + .5f);
 
-            if (tScript.IsOutOfBounds(x, y))
+            if (world.IsOutOfBounds(x, y))
             {
-                tScript.blocks[x, y] = 0;
-                tScript.update = true;
-
+                world.SetBlock(x, y, 0);
                 CollapseDisconnectedLandmasses(x, y);
                 PaintCross(x, y, Color.red);
             }
@@ -84,7 +86,7 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
         public void DestructAreaAroundCollision(Collision collision)
         {
 
-            if (collision.gameObject.GetComponent<PolygonGenerator>() == null)
+            if (collision.gameObject.GetComponent<WorldMeshView>() == null)
             {
                 return;
             }
@@ -143,19 +145,19 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
         {
             foreach (var block in landmass)
             {
-                tScript.blocks[(int) block.Location.x, (int) block.Location.y] = 0;
+                world.SetBlock((int) block.Location.x, (int) block.Location.y, 0);
 
                 var position = new Vector3(block.Location.x + 0.5f, block.Location.y - 0.5f);
 
                 var ragdollCube = PoolManager.SpawnObject(ragdollCubePrefab, position, Quaternion.identity);
                 var rigidBody = ragdollCube.GetComponent<Rigidbody>();
                 var ragdollCubeScript = ragdollCube.GetComponent<RagdollCube>();
-                ragdollCubeScript.terrain = tScript.gameObject;
-                var textureVector = tScript.textureVectorMap[block.Type];
+                ragdollCubeScript.terrain = worldView.gameObject;
+                var textureVector = worldView.textureVectorMap[block.Type];
                 rigidBody.constraints = RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationX;
-                ragdollCube.GetComponent<Renderer>().material.mainTextureOffset = textureVector * tScript.tUnit;
+                ragdollCube.GetComponent<Renderer>().material.mainTextureOffset = textureVector * worldView.tUnit;
                 ragdollCube.GetComponent<Renderer>().material.mainTextureScale =
-                    new Vector2(tScript.tUnit, tScript.tUnit);
+                    new Vector2(worldView.tUnit, worldView.tUnit);
                 //StartCoroutine(DestroyRagdollCube(ragdollCube));
             }
         }
@@ -179,41 +181,41 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
         {
             var added = new List<BlockInfo>();
 
-            if (tScript.IsOutOfBounds(x,y))
+            if (world.IsOutOfBounds(x,y))
             {
                 visited[x, y] = 1;
-                if (tScript.blocks[x, y] == 0)
+                if (world.GetBlock(x,y) == 0)
                 {
                     return new List<BlockInfo>();
                 }
 
-                added.Add(new BlockInfo(tScript.blocks[x, y], new Vector2(x, y)));
+                added.Add(new BlockInfo(world.GetBlock(x,y), new Vector2(x, y)));
                 if (y > 0 && visited[x, y - 1] == 0)
                 {
-                    if (tScript.blocks[x, y - 1] != 0)
+                    if (world.GetBlock(x, y - 1) != 0)
                     {
                         added.AddRange(CalcConnected(x, y - 1, debugColor));
                     }
                 }
 
-                if (y < tScript.blocks.GetLength(1) - 1 && visited[x, y + 1] == 0)
+                if (y < world.GetHeight() - 1 && visited[x, y + 1] == 0)
                 {
-                    if (tScript.blocks[x, y + 1] != 0)
+                    if (world.GetBlock(x, y + 1) != 0)
                     {
                         added.AddRange(CalcConnected(x, y + 1, debugColor));
                     }
                 }
 
-                if (x < tScript.blocks.GetLength(0) - 1 && visited[x + 1, y] == 0)
+                if (x < world.GetWidth() - 1 && visited[x + 1, y] == 0)
                 {
-                    if (tScript.blocks[x + 1, y] != 0)
+                    if (world.GetBlock(x + 1, y) != 0)
                     {
                         added.AddRange(CalcConnected(x + 1, y, debugColor));
                     }
                 }
                 if (x > 0 && visited[x - 1, y] == 0)
                 {
-                    if (tScript.blocks[x - 1, y] != 0)
+                    if (world.GetBlock(x - 1, y) != 0)
                     {
                         added.AddRange(CalcConnected(x - 1, y, debugColor));
                     }

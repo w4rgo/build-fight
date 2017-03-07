@@ -366,10 +366,12 @@
      <Compile Include="Assets\Scripts\Pooling\PoolManager.cs" />
      <Compile Include="Assets\Scripts\Pooling\Singleton.cs" />
      <Compile Include="Assets\Scripts\VoxelEngine\BlockTextureInfo.cs" />
-     <Compile Include="Assets\Scripts\VoxelEngine\PolygonGenerator.cs" />
+     <Compile Include="Assets\Scripts\VoxelEngine\IWorld.cs" />
      <Compile Include="Assets\Scripts\VoxelEngine\RagdollCube.cs" />
      <Compile Include="Assets\Scripts\VoxelEngine\RaycastBlockCreator.cs" />
      <Compile Include="Assets\Scripts\VoxelEngine\World.cs" />
+     <Compile Include="Assets\Scripts\VoxelEngine\WorldInstaller.cs" />
+     <Compile Include="Assets\Scripts\VoxelEngine\WorldMeshView.cs" />
      <Compile Include="Assets\Scripts\WorldGenerator.cs" />
      <None Include="Assets\Dependencies\DarkRift\DarkRift\Plugins\Readme.txt" />
      <None Include="Assets\Dependencies\DarkRift\PlayerDemo\Readme.txt" />
@@ -410,11 +412,11 @@
  <Reference Include="UnityEngine.VR">
  <HintPath>/Applications/Unity5.5/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
- <Reference Include="Transmission">
- <HintPath>/Users/fruiz/Dev/Personal/build-fight/build-fight/Assets/Dependencies/DarkRift/DarkRift/Plugins/Transmission.dll</HintPath>
- </Reference>
  <Reference Include="DarkRiftAPI">
  <HintPath>/Users/fruiz/Dev/Personal/build-fight/build-fight/Assets/Dependencies/DarkRift/DarkRift/Plugins/DarkRiftAPI.dll</HintPath>
+ </Reference>
+ <Reference Include="Transmission">
+ <HintPath>/Users/fruiz/Dev/Personal/build-fight/build-fight/Assets/Dependencies/DarkRift/DarkRift/Plugins/Transmission.dll</HintPath>
  </Reference>
  <Reference Include="DarkRift">
  <HintPath>/Users/fruiz/Dev/Personal/build-fight/build-fight/Assets/Dependencies/DarkRift/EmbeddedServer/DarkRift.dll</HintPath>

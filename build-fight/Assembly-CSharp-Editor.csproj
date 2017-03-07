@@ -267,6 +267,15 @@
  <Reference Include="UnityEngine.VR">
  <HintPath>/Applications/Unity5.5/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
+ <Reference Include="DarkRiftAPI">
+ <HintPath>/Users/fruiz/Dev/Personal/build-fight/build-fight/Assets/Dependencies/DarkRift/DarkRift/Plugins/DarkRiftAPI.dll</HintPath>
+ </Reference>
+ <Reference Include="Transmission">
+ <HintPath>/Users/fruiz/Dev/Personal/build-fight/build-fight/Assets/Dependencies/DarkRift/DarkRift/Plugins/Transmission.dll</HintPath>
+ </Reference>
+ <Reference Include="DarkRift">
+ <HintPath>/Users/fruiz/Dev/Personal/build-fight/build-fight/Assets/Dependencies/DarkRift/EmbeddedServer/DarkRift.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>/Applications/Unity5.5/Unity.app/Contents/Managed/UnityEditor.Graphs.dll</HintPath>
  </Reference>
@@ -276,19 +285,6 @@
  <Reference Include="UnityEditor.OSXStandalone.Extensions">
  <HintPath>/Applications/Unity5.5/Unity.app/Contents/PlaybackEngines/macstandalonesupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
  </Reference>
- <Reference Include="Transmission">
- <HintPath>/Users/fruiz/Dev/Personal/build-fight/build-fight/Assets/Dependencies/DarkRift/DarkRift/Plugins/Transmission.dll</HintPath>
- </Reference>
- <Reference Include="DarkRiftAPI">
- <HintPath>/Users/fruiz/Dev/Personal/build-fight/build-fight/Assets/Dependencies/DarkRift/DarkRift/Plugins/DarkRiftAPI.dll</HintPath>
- </Reference>
- <Reference Include="DarkRift">
- <HintPath>/Users/fruiz/Dev/Personal/build-fight/build-fight/Assets/Dependencies/DarkRift/EmbeddedServer/DarkRift.dll</HintPath>
- </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{5A9C969A-8A8B-7F24-AC89-7CB1A57D0C24}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
