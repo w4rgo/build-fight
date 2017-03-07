@@ -1,17 +1,22 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Assets.Scripts.CustomObjects.VoxelEngine
 {
+
+    public enum BlockType
+    {
+        STONE,GRASS
+    }
+
+    [Serializable]
     public class BlockTextureInfo
     {
-
-        private int id;
-        private Vector2 textureLocation;
-        private string name;
-
-
-        public BlockTextureInfo()
-        {
-        }
+        [SerializeField]
+        public int id;
+        [SerializeField]
+        public BlockType Type;
+        [SerializeField]
+        public Vector2 vectorOnAtlas;
     }
 }

@@ -7,22 +7,23 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
 {
     public class WorldObjectsView : MonoBehaviour
     {
-
         [SerializeField] private GameObject ragdollCubePrefab;
-        private WorldMeshView worldView;
 
         private IWorld world;
+        private Dictionary<int, BlockTextureInfo> textureMap;
+        private float tUnit;
 
         [Inject]
-        public void Init(IWorld world)
+        public void Init(IWorld world, Dictionary<int, BlockTextureInfo> textureMap, float tUnit)
         {
             this.world = world;
             this.world.OnCollapseLandMass += CollapseLandMass;
+            this.textureMap = textureMap;
+            this.tUnit = tUnit;
         }
 
         void Start()
         {
-            worldView = GetComponent<WorldMeshView>();
             PoolManager.WarmPool(ragdollCubePrefab, 100);
         }
 
@@ -37,16 +38,12 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
                 var ragdollCube = PoolManager.SpawnObject(ragdollCubePrefab, position, Quaternion.identity);
                 var rigidBody = ragdollCube.GetComponent<Rigidbody>();
                 var ragdollCubeScript = ragdollCube.GetComponent<RagdollCube>();
-                ragdollCubeScript.terrain = worldView.gameObject;
-                var textureVector = worldView.textureVectorMap[block.Type];
+                ragdollCubeScript.terrain = gameObject;
+                var textureVector = textureMap[block.Type].vectorOnAtlas;
                 rigidBody.constraints = RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationX;
-                ragdollCube.GetComponent<Renderer>().material.mainTextureOffset = textureVector * worldView.tUnit;
-                ragdollCube.GetComponent<Renderer>().material.mainTextureScale =
-                    new Vector2(worldView.tUnit, worldView.tUnit);
-                //StartCoroutine(DestroyRagdollCube(ragdollCube));
+                ragdollCube.GetComponent<Renderer>().material.mainTextureOffset = textureVector * tUnit;
+                ragdollCube.GetComponent<Renderer>().material.mainTextureScale = new Vector2(tUnit, tUnit);
             }
         }
-
-
     }
 }

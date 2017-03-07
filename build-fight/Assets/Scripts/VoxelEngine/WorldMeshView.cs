@@ -7,7 +7,6 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
 
     public class WorldMeshView : MonoBehaviour
     {
-        public Dictionary<int, Vector2> textureVectorMap = new Dictionary<int, Vector2>();
 
 
         //studentgamedev tutorial 4
@@ -23,20 +22,19 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
         private Mesh mesh;
         private MeshCollider col;
 
-        public float tUnit = 0.25f;
-        public Vector2 tStone = new Vector2(1, 0);
-        public Vector2 tGrass = new Vector2(0, 1);
-
+        private float tUnit = 0.25f;
         private int squareCount;
-        public bool update = false;
 
         private IWorld world;
 
+        private Dictionary<BlockType, BlockTextureInfo> textureInfos;
         [Inject]
-        public void Init(IWorld world)
+        public void Init(IWorld world, Dictionary<BlockType, BlockTextureInfo> textureInfos, float tUnit)
         {
             this.world = world;
             world.Updated += OnWorldUpdated;
+            this.textureInfos = textureInfos;
+            this.tUnit = tUnit;
         }
 
         private void OnWorldUpdated()
@@ -51,8 +49,7 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
             mesh = GetComponent<MeshFilter>().mesh;
             col = GetComponent<MeshCollider>();
 
-            textureVectorMap[1] = tStone;
-            textureVectorMap[2] = tGrass;
+
 
             world.GenTerrain();
             BuildMesh();
@@ -69,13 +66,13 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
                     {
                         GenCollider(px, py);
 
-                        if (world.GetBlock(px,py) == 1)
+                        if (world.GetBlock(px,py) == textureInfos[BlockType.STONE].id)
                         {
-                            GenSquare(px, py, tStone);
+                            GenSquare(px, py, textureInfos[BlockType.STONE].vectorOnAtlas);
                         }
-                        else if (world.GetBlock(px,py) == 2)
+                        else if (world.GetBlock(px,py) == textureInfos[BlockType.GRASS].id)
                         {
-                            GenSquare(px, py, tGrass);
+                            GenSquare(px, py, textureInfos[BlockType.GRASS].vectorOnAtlas);
                         }
                     }
                 }
