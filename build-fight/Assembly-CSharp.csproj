@@ -365,6 +365,7 @@
      <Compile Include="Assets\Scripts\Pooling\ObjectPoolContainer.cs" />
      <Compile Include="Assets\Scripts\Pooling\PoolManager.cs" />
      <Compile Include="Assets\Scripts\Pooling\Singleton.cs" />
+     <Compile Include="Assets\Scripts\VoxelEngine\BlockInfo.cs" />
      <Compile Include="Assets\Scripts\VoxelEngine\BlockTextureInfo.cs" />
      <Compile Include="Assets\Scripts\VoxelEngine\IWorld.cs" />
      <Compile Include="Assets\Scripts\VoxelEngine\RagdollCube.cs" />
@@ -372,6 +373,7 @@
      <Compile Include="Assets\Scripts\VoxelEngine\World.cs" />
      <Compile Include="Assets\Scripts\VoxelEngine\WorldInstaller.cs" />
      <Compile Include="Assets\Scripts\VoxelEngine\WorldMeshView.cs" />
+     <Compile Include="Assets\Scripts\VoxelEngine\WorldObjectsView.cs" />
      <Compile Include="Assets\Scripts\WorldGenerator.cs" />
      <None Include="Assets\Dependencies\DarkRift\DarkRift\Plugins\Readme.txt" />
      <None Include="Assets\Dependencies\DarkRift\PlayerDemo\Readme.txt" />

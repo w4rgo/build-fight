@@ -61,19 +61,19 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
 
         void BuildMesh()
         {
-            for (int px = 0; px < world.Blocks.GetLength(0); px++)
+            for (int px = 0; px < world.GetWidth(); px++)
             {
-                for (int py = 0; py < world.Blocks.GetLength(1); py++)
+                for (int py = 0; py < world.GetHeight(); py++)
                 {
-                    if (world.Blocks[px, py] != 0)
+                    if (world.GetBlock(px,py) != 0)
                     {
                         GenCollider(px, py);
 
-                        if (world.Blocks[px, py] == 1)
+                        if (world.GetBlock(px,py) == 1)
                         {
                             GenSquare(px, py, tStone);
                         }
-                        else if (world.Blocks[px, py] == 2)
+                        else if (world.GetBlock(px,py) == 2)
                         {
                             GenSquare(px, py, tGrass);
                         }
@@ -84,12 +84,12 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
 
         byte Block(int x, int y)
         {
-            if (x == -1 || x == world.Blocks.GetLength(0) || y == -1 || y == world.Blocks.GetLength(1))
+            if (x == -1 || x == world.GetWidth() || y == -1 || y == world.GetHeight())
             {
                 return (byte) 1;
             }
 
-            return world.Blocks[x, y];
+            return world.GetBlock(x,y);
         }
 
         void GenCollider(int x, int y)
@@ -177,7 +177,6 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
             mesh.vertices = newVertices.ToArray();
             mesh.triangles = newTriangles.ToArray();
             mesh.uv = newUV.ToArray();
-            ;
             mesh.RecalculateNormals();
 
             newVertices.Clear();
