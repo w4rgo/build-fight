@@ -19,7 +19,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_1;UNITY_5_5;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VIDEO;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE;CROSS_PLATFORM_INPUT</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_2;UNITY_5_5;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_VIDEO;ENABLE_VR;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE;CROSS_PLATFORM_INPUT</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -39,32 +39,327 @@
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-      <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+      <HintPath>/Applications/Unity5.5/Unity.app/Contents/Managed/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>F:/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+      <HintPath>/Applications/Unity5.5/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\DarkRift\CubeDemo\CubeMove.cs" />
-     <Compile Include="Assets\DarkRift\CubeDemo\CubeNetworkManager.cs" />
-     <Compile Include="Assets\DarkRift\CustomSerialisationDemo\CSCubeMove.cs" />
-     <Compile Include="Assets\DarkRift\CustomSerialisationDemo\CSCubeNetworkManager.cs" />
-     <Compile Include="Assets\DarkRift\DarkRift\Plugins\DarkRiftReceiver.cs" />
-     <Compile Include="Assets\DarkRift\EmbeddedServer\EmbeddedCubeManager.cs" />
-     <Compile Include="Assets\DarkRift\EmbeddedServer\EmbeddedCubeMove.cs" />
-     <Compile Include="Assets\DarkRift\EmbeddedServer\Server.cs" />
-     <Compile Include="Assets\DarkRift\HeavySyncDemo\CharacterMovement.cs" />
-     <Compile Include="Assets\DarkRift\HeavySyncDemo\HSNetworkManager.cs" />
-     <Compile Include="Assets\DarkRift\HeavySyncDemo\ObjectSpawner.cs" />
-     <Compile Include="Assets\DarkRift\HeavySyncDemo\SyncCharacter.cs" />
-     <Compile Include="Assets\DarkRift\PlayerDemo\NetworkManager.cs" />
-     <Compile Include="Assets\DarkRift\PlayerDemo\NetworkPlayer.cs" />
-     <Compile Include="Assets\DarkRift\PlayerDemo\Player.cs" />
-     <Compile Include="Assets\DarkRift\PlayerDemo\TagIndex.cs" />
+     <Compile Include="Assets\Dependencies\Anima2D\Examples\Scripts\CharacterMotion.cs" />
+     <Compile Include="Assets\Dependencies\Anima2D\Examples\Scripts\Follow.cs" />
+     <Compile Include="Assets\Dependencies\Anima2D\Examples\Scripts\SkinnedMeshCombiner.cs" />
+     <Compile Include="Assets\Dependencies\Anima2D\Examples\Scripts\SpringBone.cs" />
+     <Compile Include="Assets\Dependencies\Anima2D\Examples\Scripts\SpringCollider.cs" />
+     <Compile Include="Assets\Dependencies\Anima2D\Examples\Scripts\SpringManager.cs" />
+     <Compile Include="Assets\Dependencies\Anima2D\Examples\Scripts\SpriteCycle.cs" />
+     <Compile Include="Assets\Dependencies\Anima2D\Examples\Scripts\SpriteCycleParallax.cs" />
+     <Compile Include="Assets\Dependencies\Anima2D\Scripts\Bone2D.cs" />
+     <Compile Include="Assets\Dependencies\Anima2D\Scripts\Control.cs" />
+     <Compile Include="Assets\Dependencies\Anima2D\Scripts\EditorUpdaterProxy.cs" />
+     <Compile Include="Assets\Dependencies\Anima2D\Scripts\Ik2D.cs" />
+     <Compile Include="Assets\Dependencies\Anima2D\Scripts\IkCCD2D.cs" />
+     <Compile Include="Assets\Dependencies\Anima2D\Scripts\IkGroup.cs" />
+     <Compile Include="Assets\Dependencies\Anima2D\Scripts\IkLimb2D.cs" />
+     <Compile Include="Assets\Dependencies\Anima2D\Scripts\IkSolver2D.cs" />
+     <Compile Include="Assets\Dependencies\Anima2D\Scripts\IkSolver2DCCD.cs" />
+     <Compile Include="Assets\Dependencies\Anima2D\Scripts\IkSolver2DLimb.cs" />
+     <Compile Include="Assets\Dependencies\Anima2D\Scripts\MathUtils.cs" />
+     <Compile Include="Assets\Dependencies\Anima2D\Scripts\Pose.cs" />
+     <Compile Include="Assets\Dependencies\Anima2D\Scripts\PoseManager.cs" />
+     <Compile Include="Assets\Dependencies\Anima2D\Scripts\SpriteMesh.cs" />
+     <Compile Include="Assets\Dependencies\Anima2D\Scripts\SpriteMeshAnimation.cs" />
+     <Compile Include="Assets\Dependencies\Anima2D\Scripts\SpriteMeshInstance.cs" />
+     <Compile Include="Assets\Dependencies\DarkRift\CubeDemo\CubeMove.cs" />
+     <Compile Include="Assets\Dependencies\DarkRift\CubeDemo\CubeNetworkManager.cs" />
+     <Compile Include="Assets\Dependencies\DarkRift\CustomSerialisationDemo\CSCubeMove.cs" />
+     <Compile Include="Assets\Dependencies\DarkRift\CustomSerialisationDemo\CSCubeNetworkManager.cs" />
+     <Compile Include="Assets\Dependencies\DarkRift\DarkRift\Plugins\DarkRiftReceiver.cs" />
+     <Compile Include="Assets\Dependencies\DarkRift\EmbeddedServer\EmbeddedCubeManager.cs" />
+     <Compile Include="Assets\Dependencies\DarkRift\EmbeddedServer\EmbeddedCubeMove.cs" />
+     <Compile Include="Assets\Dependencies\DarkRift\EmbeddedServer\Server.cs" />
+     <Compile Include="Assets\Dependencies\DarkRift\HeavySyncDemo\CharacterMovement.cs" />
+     <Compile Include="Assets\Dependencies\DarkRift\HeavySyncDemo\HSNetworkManager.cs" />
+     <Compile Include="Assets\Dependencies\DarkRift\HeavySyncDemo\ObjectSpawner.cs" />
+     <Compile Include="Assets\Dependencies\DarkRift\HeavySyncDemo\SyncCharacter.cs" />
+     <Compile Include="Assets\Dependencies\DarkRift\PlayerDemo\NetworkManager.cs" />
+     <Compile Include="Assets\Dependencies\DarkRift\PlayerDemo\NetworkPlayer.cs" />
+     <Compile Include="Assets\Dependencies\DarkRift\PlayerDemo\Player.cs" />
+     <Compile Include="Assets\Dependencies\DarkRift\PlayerDemo\TagIndex.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\2D\Scripts\Camera2DFollow.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\2D\Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\2D\Scripts\Platformer2DUserControl.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\2D\Scripts\PlatformerCharacter2D.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\2D\Scripts\Restarter.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\Characters\FirstPersonCharacter\Scripts\HeadBob.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\Characters\FirstPersonCharacter\Scripts\MouseLook.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\Characters\FirstPersonCharacter\Scripts\RigidbodyFirstPersonController.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\Characters\RollerBall\Scripts\Ball.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\Characters\RollerBall\Scripts\BallUserControl.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\Characters\ThirdPersonCharacter\Scripts\AICharacterControl.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonCharacter.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonUserControl.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\CrossPlatformInput\Scripts\InputAxisScrollbar.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\CrossPlatformInput\Scripts\Joystick.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\CrossPlatformInput\Scripts\MobileControlRig.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\MobileInput.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\CrossPlatformInput\Scripts\TiltInput.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\CrossPlatformInput\Scripts\TouchPad.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\CrossPlatformInput\Scripts\VirtualInput.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\Utility\ActivateTrigger.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\Utility\AlphaButtonClickMask.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\Utility\AutoMobileShaderSwitch.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\Utility\AutoMoveAndRotate.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\Utility\CameraRefocus.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\Utility\CurveControlledBob.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\Utility\DragRigidbody.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\Utility\DynamicShadowSettings.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\Utility\EventSystemChecker.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\Utility\FOVKick.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\Utility\FPSCounter.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\Utility\FollowTarget.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\Utility\ForcedReset.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\Utility\LerpControlledBob.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\Utility\ObjectResetter.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\Utility\ParticleSystemDestroyer.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\Utility\PlatformSpecificContent.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\Utility\SimpleActivatorMenu.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\Utility\SimpleMouseRotator.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\Utility\SmoothFollow.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\Utility\TimedObjectActivator.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\Utility\TimedObjectDestructor.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\Utility\WaypointCircuit.cs" />
+     <Compile Include="Assets\Dependencies\Standard Assets\Utility\WaypointProgressTracker.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\OptionalExtras\Signals\ISignalHandler.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\OptionalExtras\Signals\InstanceMethodSignalHandler.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\OptionalExtras\Signals\Signal0.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\OptionalExtras\Signals\Signal1.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\OptionalExtras\Signals\Signal2.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\OptionalExtras\Signals\Signal3.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\OptionalExtras\Signals\Signal4.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\OptionalExtras\Signals\SignalBase.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\OptionalExtras\Signals\SignalBinder.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\OptionalExtras\Signals\SignalExtensions.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\OptionalExtras\Signals\SignalFromBinder.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\OptionalExtras\Signals\SignalHandlerBase.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\OptionalExtras\Signals\SignalHandlerBinder.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\OptionalExtras\Signals\SignalManager.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\OptionalExtras\Signals\StaticMethodSignalHandler.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\BindInfo\BindInfo.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\BindInfo\FactoryBindInfo.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\BindInfo\GameObjectCreationParameters.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\BindInfo\MemoryPoolBindInfo.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\ArgConditionCopyNonLazyBinder.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\ArgNonLazyBinder.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\ConcreteBinders\ConcreteBinderGeneric.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\ConcreteBinders\ConcreteBinderNonGeneric.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\ConcreteBinders\ConcreteIdBinderGeneric.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\ConcreteBinders\ConcreteIdBinderNonGeneric.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\ConditionCopyNonLazyBinder.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\Conventions\ConventionAssemblySelectionBinder.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\Conventions\ConventionBindInfo.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\Conventions\ConventionFilterTypesBinder.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\Conventions\ConventionSelectTypesBinder.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\CopyNonLazyBinder.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\Factory\FactoryFromBinder\FactoryFromBinder0.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\Factory\FactoryFromBinder\FactoryFromBinder1.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\Factory\FactoryFromBinder\FactoryFromBinder2.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\Factory\FactoryFromBinder\FactoryFromBinder3.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\Factory\FactoryFromBinder\FactoryFromBinder4.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\Factory\FactoryFromBinder\FactoryFromBinder5.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\Factory\FactoryFromBinder\SubContainerBinder\FactorySubContainerBinder0.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\Factory\FactoryFromBinder\SubContainerBinder\FactorySubContainerBinder1.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\Factory\FactoryFromBinder\SubContainerBinder\FactorySubContainerBinder2.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\Factory\FactoryFromBinder\SubContainerBinder\FactorySubContainerBinder3.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\Factory\FactoryFromBinder\SubContainerBinder\FactorySubContainerBinder4.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\Factory\FactoryFromBinder\SubContainerBinder\FactorySubContainerBinder5.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\Factory\FactoryFromBinder\SubContainerBinder\FactorySubContainerBinderBase.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\Factory\FactoryFromBinder\SubContainerBinder\FactorySubContainerBinderWithParams.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\Factory\FactoryFromBinderBase.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\Factory\FactoryToChoiceBinder\FactoryToChoiceBinder0.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\Factory\FactoryToChoiceBinder\FactoryToChoiceBinder1.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\Factory\FactoryToChoiceBinder\FactoryToChoiceBinder2.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\Factory\FactoryToChoiceBinder\FactoryToChoiceBinder3.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\Factory\FactoryToChoiceBinder\FactoryToChoiceBinder4.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\Factory\FactoryToChoiceBinder\FactoryToChoiceBinder5.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\Factory\FactoryToChoiceIdBinder\FactoryToChoiceIdBinder0.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\Factory\FactoryToChoiceIdBinder\FactoryToChoiceIdBinder1.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\Factory\FactoryToChoiceIdBinder\FactoryToChoiceIdBinder2.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\Factory\FactoryToChoiceIdBinder\FactoryToChoiceIdBinder3.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\Factory\FactoryToChoiceIdBinder\FactoryToChoiceIdBinder4.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\Factory\FactoryToChoiceIdBinder\FactoryToChoiceIdBinder5.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\Factory\PlaceholderFactoryBindingFinalizer.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\Factory\Pooling\MemoryPoolBindingFinalizer.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\Factory\Pooling\MemoryPoolExpandBinder.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\Factory\Pooling\MemoryPoolInitialSizeBinder.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\FromBinders\FromBinder.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\FromBinders\FromBinderGeneric.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\FromBinders\FromBinderNonGeneric.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\GameObject\NameTransformConditionCopyNonLazyBinder.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\GameObject\NameTransformScopeArgConditionCopyNonLazyBinder.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\GameObject\NameTransformScopeArgNonLazyBinder.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\GameObject\NameTransformScopeConditionCopyNonLazyBinder.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\GameObject\TransformConditionCopyNonLazyBinder.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\GameObject\TransformScopeArgConditionCopyNonLazyBinder.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\GameObject\TransformScopeArgNonLazyBinder.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\GameObject\TransformScopeConditionCopyNonLazyBinder.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\IdBinder.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\IdScopeConditionCopyNonLazyBinder.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\NonLazyBinder.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\ScopeArgConditionCopyNonLazyBinder.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\ScopeArgNonLazyBinder.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\ScopeConditionCopyNonLazyBinder.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\ScopeNonLazyBinder.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Binders\SubContainerBinder.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\BindingUtil.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Finalizers\BindFinalizerWrapper.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Finalizers\IBindingFinalizer.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Finalizers\NullBindingFinalizer.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Finalizers\PrefabBindingFinalizer.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Finalizers\PrefabResourceBindingFinalizer.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Finalizers\ProviderBindingFinalizer.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Finalizers\ScopableBindingFinalizer.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Finalizers\SingleProviderBindingFinalizer.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Finalizers\SubContainerInstallerBindingFinalizer.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Finalizers\SubContainerMethodBindingFinalizer.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Finalizers\SubContainerPrefabBindingFinalizer.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Binding\Finalizers\SubContainerPrefabResourceBindingFinalizer.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Factories\Factory.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Factories\GameObjectFactory.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Factories\IFactory.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Factories\KeyedFactory.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Factories\PlaceholderFactory.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Factories\Pooling\IMemoryPool.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Factories\Pooling\MemoryPool.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Factories\Pooling\MemoryPoolBase.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Factories\Pooling\MonoMemoryPool.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Factories\PrefabFactory.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Injection\InjectContext.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Injection\InjectUtil.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Injection\InjectableInfo.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Injection\Lazy.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Install\Contexts\Context.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Install\Contexts\GameObjectContext.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Install\Contexts\ProjectContext.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Install\Contexts\SceneContext.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Install\Contexts\SceneDecoratorContext.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Install\Contexts\StaticContext.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Install\IInstaller.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Install\Installer.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Install\InstallerBase.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Install\MonoInstaller.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Install\MonoInstallerBase.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Install\ScriptableObjectInstaller.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Install\ScriptableObjectInstallerBase.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Install\ZenjectBinding.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Internal\Assert.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Internal\Func.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Internal\LinqExtensions.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Internal\Log.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Internal\MiscExtensions.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Internal\PreserveAttribute.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Internal\ReflectionUtil.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Internal\TypeExtensions.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Internal\ValuePair.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Main\BindingId.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Main\DiContainer.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Main\IInstantiator.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Main\LazyInstanceInjector.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\CachedProvider.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\ComponentProviders\AddToGameObjectComponentProviders\AddToCurrentGameObjectComponentProvider.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\ComponentProviders\AddToGameObjectComponentProviders\AddToExistingGameObjectComponentProvider.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\ComponentProviders\AddToGameObjectComponentProviders\AddToGameObjectComponentProviderBase.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\ComponentProviders\AddToGameObjectComponentProviders\AddToNewGameObjectComponentProvider.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\ComponentProviders\GetFromPrefabComponentProvider.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\FactoryProvider.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\GameObjectProviders\EmptyGameObjectProvider.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\GameObjectProviders\PrefabGameObjectProvider.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\GetterProvider.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\IProvider.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\IProviderExtensions.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\InstanceProvider.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\MethodProvider.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\MethodProviderMultiple.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\MethodProviderSimple.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\MethodProviderUntyped.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\MethodProviderWithContainer.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\PrefabCreators\IPrefabInstantiator.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\PrefabCreators\PrefabInstantiator.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\PrefabCreators\PrefabInstantiatorCached.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\PrefabProviders\IPrefabProvider.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\PrefabProviders\PrefabProvider.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\PrefabProviders\PrefabProviderResource.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\ProviderUtil.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\ResolveProvider.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\ResourceProvider.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\ScriptableObjectResourceProvider.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\Singleton\Prefab\PrefabResourceSingletonProviderCreator.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\Singleton\Prefab\PrefabSingletonProviderCreator.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\Singleton\SingletonId.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\Singleton\SingletonImplIds.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\Singleton\SingletonMarkRegistry.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\Singleton\SingletonProviderCreator.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\Singleton\SingletonTypes.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\Singleton\Standard\StandardSingletonDeclaration.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\Singleton\Standard\StandardSingletonProviderCreator.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\Singleton\SubContainer\SubContainerSingletonProviderCreatorByInstaller.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\Singleton\SubContainer\SubContainerSingletonProviderCreatorByMethod.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\Singleton\SubContainer\SubContainerSingletonProviderCreatorByNewPrefab.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\Singleton\SubContainer\SubContainerSingletonProviderCreatorByNewPrefabResource.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\SubContainerCreators\ISubContainerCreator.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\SubContainerCreators\SubContainerCreatorByInstaller.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\SubContainerCreators\SubContainerCreatorByMethod.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\SubContainerCreators\SubContainerCreatorByNewPrefab.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\SubContainerCreators\SubContainerCreatorByNewPrefabWithParams.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\SubContainerCreators\SubContainerCreatorCached.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\SubContainerDependencyProvider.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\TransientProvider.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Providers\UntypedFactoryProvider.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Runtime\DisposableManager.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Runtime\GuiRenderableManager.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Runtime\GuiRenderer.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Runtime\InitializableManager.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Runtime\Kernels\DefaultGameObjectKernel.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Runtime\Kernels\Kernel.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Runtime\Kernels\MonoKernel.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Runtime\Kernels\ProjectKernel.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Runtime\Kernels\SceneKernel.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Runtime\TaskUpdater.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Runtime\TickableManager.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Usage\IGuiRenderable.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Usage\IInitializable.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Usage\ILateDisposable.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Usage\ITickable.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Usage\InjectAttribute.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Usage\InjectAttributeBase.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Usage\InjectLocalAttribute.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Usage\InjectOptionalAttribute.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Usage\InjectSources.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Usage\ZenjectAllowDuringValidationAttribute.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Util\ActionInstaller.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Util\ExecutionOrderExtensions.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Util\ExecutionOrderInstaller.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Util\PoolCleanupChecker.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Util\ProfileBlock.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Util\TypeAnalyzer.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Util\UnityUtil.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Util\ValidationUtil.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Util\ZenUtilInternal.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Util\ZenjectException.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Util\ZenjectSceneLoader.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Util\ZenjectTypeInfo.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Validation\IValidatable.cs" />
+     <Compile Include="Assets\Dependencies\Zenject\Source\Validation\ValidationMarker.cs" />
      <Compile Include="Assets\Scripts\Character\BlockCreatorSelector.cs" />
      <Compile Include="Assets\Scripts\Character\CharacterUserControl.cs" />
      <Compile Include="Assets\Scripts\Character\PlatformerCharacter.cs" />
+     <Compile Include="Assets\Scripts\Interactables\Catapult.cs" />
+     <Compile Include="Assets\Scripts\Interactables\CatapultRock.cs" />
      <Compile Include="Assets\Scripts\MeshCreator.cs" />
      <Compile Include="Assets\Scripts\Pooling\ObjectPool.cs" />
      <Compile Include="Assets\Scripts\Pooling\ObjectPoolContainer.cs" />
@@ -74,52 +369,56 @@
      <Compile Include="Assets\Scripts\VoxelEngine\PolygonGenerator.cs" />
      <Compile Include="Assets\Scripts\VoxelEngine\RagdollCube.cs" />
      <Compile Include="Assets\Scripts\VoxelEngine\RaycastBlockCreator.cs" />
+     <Compile Include="Assets\Scripts\VoxelEngine\World.cs" />
      <Compile Include="Assets\Scripts\WorldGenerator.cs" />
-     <None Include="Assets\DarkRift\DarkRift\Plugins\Readme.txt" />
-     <None Include="Assets\DarkRift\PlayerDemo\Readme.txt" />
-     <None Include="Assets\DarkRift\EmbeddedServer\ReadMe.txt" />
-     <None Include="Assets\DarkRift\ChangeLog.txt" />
-     <None Include="Assets\DarkRift\CustomSerialisationDemo\Readme.txt" />
-     <None Include="Assets\DarkRift\CubeDemo\Readme.txt" />
-     <None Include="Assets\DarkRift\EmbeddedServer\DarkRift.xml" />
-     <None Include="Assets\DarkRift\DarkRift\Plugins\DarkRiftAPI.xml" />
-     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
-     <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
-     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
-     <None Include="Assets\DarkRift\HeavySyncDemo\Readme.txt" />
-     <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
-     <None Include="Assets\DarkRift\Readme.txt" />
+     <None Include="Assets\Dependencies\DarkRift\DarkRift\Plugins\Readme.txt" />
+     <None Include="Assets\Dependencies\DarkRift\PlayerDemo\Readme.txt" />
+     <None Include="Assets\Dependencies\DarkRift\EmbeddedServer\ReadMe.txt" />
+     <None Include="Assets\Dependencies\DarkRift\ChangeLog.txt" />
+     <None Include="Assets\Dependencies\DarkRift\CustomSerialisationDemo\Readme.txt" />
+     <None Include="Assets\Dependencies\Anima2D\Version.txt" />
+     <None Include="Assets\Dependencies\DarkRift\CubeDemo\Readme.txt" />
+     <None Include="Assets\Dependencies\DarkRift\EmbeddedServer\DarkRift.xml" />
+     <None Include="Assets\Dependencies\DarkRift\DarkRift\Plugins\DarkRiftAPI.xml" />
+     <None Include="Assets\Dependencies\Zenject\LICENSE.txt" />
+     <None Include="Assets\Dependencies\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\Dependencies\Zenject\Version.txt" />
+     <None Include="Assets\Dependencies\Anima2D\Examples\Shaders\Unlit-Alpha-Cull-off.shader" />
+     <None Include="Assets\Dependencies\Anima2D\Licenses.txt" />
+     <None Include="Assets\Dependencies\Anima2D\Examples\Shaders\VertexLitOneDirectional.shader" />
+     <None Include="Assets\Dependencies\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
+     <None Include="Assets\Dependencies\Anima2D\Readme.txt" />
+     <None Include="Assets\Dependencies\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
+     <None Include="Assets\Dependencies\DarkRift\HeavySyncDemo\Readme.txt" />
+     <None Include="Assets\Dependencies\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
+     <None Include="Assets\Dependencies\DarkRift\Readme.txt" />
  <Reference Include="UnityEngine.UI">
- <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>/Applications/Unity5.5/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
- <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ <HintPath>/Applications/Unity5.5/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.PlaymodeTestsRunner">
- <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll</HintPath>
+ <HintPath>/Applications/Unity5.5/Unity.app/Contents/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Analytics">
- <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ <HintPath>/Applications/Unity5.5/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.HoloLens">
- <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ <HintPath>/Applications/Unity5.5/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.VR">
- <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
- </Reference>
- <Reference Include="DarkRiftAPI">
- <HintPath>D:/DEV/build2d/build-fight/Assets/DarkRift/DarkRift/Plugins/DarkRiftAPI.dll</HintPath>
+ <HintPath>/Applications/Unity5.5/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
  <Reference Include="Transmission">
- <HintPath>D:/DEV/build2d/build-fight/Assets/DarkRift/DarkRift/Plugins/Transmission.dll</HintPath>
+ <HintPath>/Users/fruiz/Dev/Personal/build-fight/build-fight/Assets/Dependencies/DarkRift/DarkRift/Plugins/Transmission.dll</HintPath>
+ </Reference>
+ <Reference Include="DarkRiftAPI">
+ <HintPath>/Users/fruiz/Dev/Personal/build-fight/build-fight/Assets/Dependencies/DarkRift/DarkRift/Plugins/DarkRiftAPI.dll</HintPath>
  </Reference>
  <Reference Include="DarkRift">
- <HintPath>D:/DEV/build2d/build-fight/Assets/DarkRift/EmbeddedServer/DarkRift.dll</HintPath>
+ <HintPath>/Users/fruiz/Dev/Personal/build-fight/build-fight/Assets/Dependencies/DarkRift/EmbeddedServer/DarkRift.dll</HintPath>
  </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{96A9FF32-2859-A847-CCC2-7A81B3D0A1DB}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
