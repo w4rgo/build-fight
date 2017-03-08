@@ -1,17 +1,24 @@
 using Assets.Scripts.CustomObjects.VoxelEngine;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
+using Zenject;
 
 namespace Assets.Scripts.Character
 {
-    [RequireComponent(typeof (PlatformerCharacter))]
+    [RequireComponent(typeof(PlatformerCharacter))]
     public class CharacterUserControl : MonoBehaviour
     {
-        private PlatformerCharacter m_Character;
-        [SerializeField]
-        private RaycastBlockCreator blockCreator;
-        private bool m_Jump;
+        [SerializeField] private GameObject mouseBlockSelector;
 
+        private PlatformerCharacter m_Character;
+        private bool m_Jump;
+        private IWorldModifier worldModifier;
+
+        [Inject]
+        public void Init(IWorldModifier worldModifier)
+        {
+            this.worldModifier = worldModifier;
+        }
 
         private void Awake()
         {
@@ -29,12 +36,12 @@ namespace Assets.Scripts.Character
 
             if (CrossPlatformInputManager.GetMouseButton(0))
             {
-                blockCreator.CreateBlock();
+                worldModifier.CreateBlock(mouseBlockSelector.transform.position);
             }
 
             if (CrossPlatformInputManager.GetMouseButton(2))
             {
-                blockCreator.DestructBlock();
+                worldModifier.DestroyBlock(mouseBlockSelector.transform.position);
             }
         }
 

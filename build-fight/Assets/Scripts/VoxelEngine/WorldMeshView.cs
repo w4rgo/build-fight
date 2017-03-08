@@ -7,8 +7,6 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
 
     public class WorldMeshView : MonoBehaviour
     {
-
-
         //studentgamedev tutorial 4
         private List<Vector3> newVertices = new List<Vector3>();
 
@@ -28,6 +26,7 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
         private IWorld world;
 
         private Dictionary<BlockType, BlockTextureInfo> textureInfos;
+
         [Inject]
         public void Init(IWorld world, Dictionary<BlockType, BlockTextureInfo> textureInfos, float tUnit)
         {
@@ -50,7 +49,6 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
             col = GetComponent<MeshCollider>();
 
 
-
             world.GenTerrain();
             BuildMesh();
             UpdateMesh();
@@ -62,15 +60,15 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
             {
                 for (int py = 0; py < world.GetHeight(); py++)
                 {
-                    if (world.GetBlock(px,py) != 0)
+                    if (world.GetBlock(px, py) != 0)
                     {
                         GenCollider(px, py);
 
-                        if (world.GetBlock(px,py) == textureInfos[BlockType.STONE].id)
+                        if (world.GetBlock(px, py) == textureInfos[BlockType.STONE].id)
                         {
                             GenSquare(px, py, textureInfos[BlockType.STONE].vectorOnAtlas);
                         }
-                        else if (world.GetBlock(px,py) == textureInfos[BlockType.GRASS].id)
+                        else if (world.GetBlock(px, py) == textureInfos[BlockType.GRASS].id)
                         {
                             GenSquare(px, py, textureInfos[BlockType.GRASS].vectorOnAtlas);
                         }
@@ -86,7 +84,7 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
                 return (byte) 1;
             }
 
-            return world.GetBlock(x,y);
+            return world.GetBlock(x, y);
         }
 
         void GenCollider(int x, int y)

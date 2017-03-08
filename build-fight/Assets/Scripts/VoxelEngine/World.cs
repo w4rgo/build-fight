@@ -9,7 +9,6 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
         public event Action<List<BlockInfo>> OnCollapseLandMass = delegate(List<BlockInfo> list) {  };
         public event Action Updated = delegate { };
         private byte[,] Blocks;
-
         private byte[,] visited;
 
         public void SetBlock(int x, int y, byte value)
@@ -48,7 +47,6 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
         {
             return (int) (Mathf.Pow((Mathf.PerlinNoise(x / scale, y / scale) * mag), (exp)));
         }
-
 
         public void GenTerrain()
         {
@@ -108,7 +106,6 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
             var connectedLandmass = CalculateConnectedBlocks(x, y, color);
             return connectedLandmass;
         }
-
 
         private List<BlockInfo> CalculateConnectedBlocks(int x, int y, Color debugColor)
         {

@@ -1,15 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using Assets.Scripts.CustomObjects.Interactables;
-using Assets.Scripts.CustomObjects.VoxelEngine;
+﻿using Assets.Scripts.CustomObjects.Interactables;
 using UnityEngine;
+using Zenject;
 
 public class Catapult : MonoBehaviour
 {
-    [SerializeField]
-    private string shootTrigger= "shoot";
-    [SerializeField]
-    private string reloadTrigger = "reload";
+    [SerializeField] private string shootTrigger = "shoot";
+    [SerializeField] private string reloadTrigger = "reload";
 
     [SerializeField] private CatapultRock rockPrefab;
 
@@ -19,22 +15,19 @@ public class Catapult : MonoBehaviour
 
     [SerializeField] private Vector3 rockDirection;
 
-    [SerializeField] private RaycastBlockCreator destructor;
-
     private Animator animator;
+    private IInstantiator instantiator;
 
-    // Use this for initialization
+    [Inject]
+    public void Init(IInstantiator instantiator)
+    {
+        this.instantiator = instantiator;
+    }
+
     void Start()
     {
         animator = GetComponent<Animator>();
-
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
 
     public void Shoot()
     {
@@ -48,11 +41,8 @@ public class Catapult : MonoBehaviour
 
     public void SpawnRock()
     {
-        Debug.Log("Spanwing rock");
-        var rock = Instantiate<CatapultRock>(rockPrefab);
-        rock.destructor = destructor;
+        var rock = instantiator.InstantiatePrefab(rockPrefab);
         rock.transform.position = rockSpawnPoint.position;
-        rock.GetComponent<Rigidbody>().AddForce(rockDirection*rockForce,ForceMode.Impulse);
-
+        rock.GetComponent<Rigidbody>().AddForce(rockDirection * rockForce, ForceMode.Impulse);
     }
 }

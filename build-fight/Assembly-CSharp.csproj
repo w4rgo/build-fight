@@ -368,11 +368,13 @@
      <Compile Include="Assets\Scripts\VoxelEngine\BlockInfo.cs" />
      <Compile Include="Assets\Scripts\VoxelEngine\BlockTextureInfo.cs" />
      <Compile Include="Assets\Scripts\VoxelEngine\IWorld.cs" />
+     <Compile Include="Assets\Scripts\VoxelEngine\IWorldModifier.cs" />
+     <Compile Include="Assets\Scripts\VoxelEngine\IWorldModifierPM.cs" />
      <Compile Include="Assets\Scripts\VoxelEngine\RagdollCube.cs" />
-     <Compile Include="Assets\Scripts\VoxelEngine\RaycastBlockCreator.cs" />
      <Compile Include="Assets\Scripts\VoxelEngine\World.cs" />
      <Compile Include="Assets\Scripts\VoxelEngine\WorldInstaller.cs" />
      <Compile Include="Assets\Scripts\VoxelEngine\WorldMeshView.cs" />
+     <Compile Include="Assets\Scripts\VoxelEngine\WorldModifier.cs" />
      <Compile Include="Assets\Scripts\VoxelEngine\WorldObjectsView.cs" />
      <Compile Include="Assets\Scripts\WorldGenerator.cs" />
      <None Include="Assets\Dependencies\DarkRift\DarkRift\Plugins\Readme.txt" />

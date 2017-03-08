@@ -23,12 +23,13 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
                 idToTextureDictionary[texture.id] = texture;
             }
 
-
             Container.Bind<IWorld>().To<World>().AsSingle();
             Container.BindInstance(typeToTextureDictionary).WhenInjectedInto<WorldMeshView>();
             Container.BindInstance(textureUnit).WhenInjectedInto<WorldMeshView>();
             Container.BindInstance(idToTextureDictionary).WhenInjectedInto<WorldObjectsView>();
             Container.BindInstance(textureUnit).WhenInjectedInto<WorldObjectsView>();
+            Container.Bind<IWorldModifier>().To<WorldModifier>().AsSingle();
+            Container.Bind<IWorldModifierPM>().To<WorldModifier>().AsSingle();
         }
     }
 }
