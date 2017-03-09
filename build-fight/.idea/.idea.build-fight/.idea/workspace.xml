@@ -15,11 +15,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="NetworkManager.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NetworkManager.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Network/NetworkManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="699">
-              <caret line="63" column="9" lean-forward="false" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
+            <state relative-caret-position="1059">
+              <caret line="83" column="48" lean-forward="false" selection-start-line="83" selection-start-column="48" selection-end-line="83" selection-end-column="48" />
               <folding>
                 <marker date="1489067356000" expanded="true" signature="6:140" ph="..." />
                 <marker date="1489067356000" expanded="true" signature="185:3116" ph="{...}" />
@@ -40,6 +40,58 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="CharacterUserControl.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterUserControl.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-188">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1489067382000" expanded="true" signature="6:127" ph="..." />
+                <marker date="1489067382000" expanded="true" signature="163:2191" ph="{...}" />
+                <marker date="1489067382000" expanded="true" signature="271:2189" ph="{...}" />
+                <marker date="1489067382000" expanded="true" signature="642:710" ph="{...}" />
+                <marker date="1489067382000" expanded="true" signature="740:823" ph="{...}" />
+                <marker date="1489067382000" expanded="true" signature="853:1041" ph="{...}" />
+                <marker date="1489067382000" expanded="true" signature="896:948" ph="{...}" />
+                <marker date="1489067382000" expanded="true" signature="1072:1732" ph="{...}" />
+                <marker date="1489067382000" expanded="true" signature="1115:1167" ph="{...}" />
+                <marker date="1489067382000" expanded="true" signature="1193:1377" ph="{...}" />
+                <marker date="1489067382000" expanded="true" signature="1439:1549" ph="{...}" />
+                <marker date="1489067382000" expanded="true" signature="1611:1722" ph="{...}" />
+                <marker date="1489067382000" expanded="true" signature="1769:2183" ph="{...}" />
+                <marker date="1489067382000" expanded="true" signature="1812:1864" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlatformerCharacter.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Character/PlatformerCharacter.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="615">
+              <caret line="64" column="13" lean-forward="false" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+              <folding>
+                <marker date="1489068171000" expanded="true" signature="6:32" ph="..." />
+                <marker date="1489068171000" expanded="true" signature="68:5154" ph="{...}" />
+                <marker date="1489068171000" expanded="true" signature="123:5152" ph="{...}" />
+                <marker date="1489068171000" expanded="true" signature="1550:1828" ph="{...}" />
+                <marker date="1489068171000" expanded="true" signature="1865:2716" ph="{...}" />
+                <marker date="1489068171000" expanded="true" signature="1921:2138" ph="/* The player is grounded if a circlecast to the groundcheck position hits anything designated as ground ... */" />
+                <marker date="1489068171000" expanded="true" signature="2309:2435" ph="{...}" />
+                <marker date="1489068171000" expanded="true" signature="2779:4801" ph="{...}" />
+                <marker date="1489068171000" expanded="true" signature="2914:3220" ph="{...}" />
+                <marker date="1489068171000" expanded="true" signature="3135:3206" ph="{...}" />
+                <marker date="1489068171000" expanded="true" signature="3466:4445" ph="{...}" />
+                <marker date="1489068171000" expanded="true" signature="3638:3823" ph="/* The Speed animator parameter is set to the absolute value of the horizontal input. ... */" />
+                <marker date="1489068171000" expanded="true" signature="4057:4165" ph="{...}" />
+                <marker date="1489068171000" expanded="true" signature="4323:4431" ph="{...}" />
+                <marker date="1489068171000" expanded="true" signature="4553:4791" ph="{...}" />
+                <marker date="1489068171000" expanded="true" signature="4831:5146" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
@@ -53,7 +105,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/WorldGenerator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MeshCreator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/PlataformerCharacter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/PlatformerCharacter.cs" />
         <option value="$PROJECT_DIR$/Assets/Standard Assets/CrossPlatformInput/Scripts/VirtualInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Standard Assets/CrossPlatformInput/Scripts/PlatformSpecific/MobileInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Standard Assets/CrossPlatformInput/Scripts/PlatformSpecific/StandaloneInput.cs" />
@@ -81,6 +132,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Network/NetworkManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterUserControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/VoxelEngine/RagdollCube.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/PlatformerCharacter.cs" />
       </list>
     </option>
   </component>
@@ -347,12 +399,12 @@
       <workItem from="1488908571174" duration="2740000" />
       <workItem from="1488911505590" duration="1395000" />
       <workItem from="1488980388410" duration="2977000" />
-      <workItem from="1489065126580" duration="2202000" />
+      <workItem from="1489065126580" duration="2888000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46843000" />
+    <option name="totallyTimeSpent" value="47529000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -709,10 +761,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Network/NetworkManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1059">
+          <caret line="83" column="48" lean-forward="false" selection-start-line="83" selection-start-column="48" selection-end-line="83" selection-end-column="48" />
+          <folding>
+            <marker date="1489067356000" expanded="true" signature="6:140" ph="..." />
+            <marker date="1489067356000" expanded="true" signature="185:3116" ph="{...}" />
+            <marker date="1489067356000" expanded="true" signature="539:593" ph="{...}" />
+            <marker date="1489067356000" expanded="true" signature="609:1471" ph="{...}" />
+            <marker date="1489067356000" expanded="true" signature="967:1405" ph="{...}" />
+            <marker date="1489067356000" expanded="true" signature="1499:1645" ph="{...}" />
+            <marker date="1489067356000" expanded="true" signature="1505:1613" ph="/* You will want this here otherwise the server wont notice until someone else sends data to this ... */" />
+            <marker date="1489067356000" expanded="true" signature="1721:3114" ph="{...}" />
+            <marker date="1489067356000" expanded="true" signature="1725:1981" ph="/* When any data is received it will be passed here, ... */" />
+            <marker date="1489067356000" expanded="true" signature="2015:3111" ph="{...}" />
+            <marker date="1489067356000" expanded="true" signature="2137:2301" ph="{...}" />
+            <marker date="1489067356000" expanded="true" signature="2423:3107" ph="{...}" />
+            <marker date="1489067356000" expanded="true" signature="2433:2558" ph="/* Instantiate the player ... */" />
+            <marker date="1489067356000" expanded="true" signature="2988:3102" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterUserControl.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="-188">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <marker date="1489067382000" expanded="true" signature="6:127" ph="..." />
             <marker date="1489067382000" expanded="true" signature="163:2191" ph="{...}" />
@@ -734,47 +809,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Character/PlatformerCharacter.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="63" column="54" lean-forward="false" selection-start-line="63" selection-start-column="54" selection-end-line="63" selection-end-column="54" />
+        <state relative-caret-position="615">
+          <caret line="64" column="13" lean-forward="false" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
           <folding>
-            <marker date="1488556270000" expanded="true" signature="6:32" ph="..." />
-            <marker date="1488556270000" expanded="true" signature="68:5035" ph="{...}" />
-            <marker date="1488556270000" expanded="true" signature="123:5033" ph="{...}" />
-            <marker date="1488556270000" expanded="true" signature="1550:1828" ph="{...}" />
-            <marker date="1488556270000" expanded="true" signature="1865:2601" ph="{...}" />
-            <marker date="1488556270000" expanded="true" signature="1921:2138" ph="/* The player is grounded if a circlecast to the groundcheck position hits anything designated as ground ... */" />
-            <marker date="1488556270000" expanded="true" signature="2309:2435" ph="{...}" />
-            <marker date="1488556270000" expanded="true" signature="2664:4682" ph="{...}" />
-            <marker date="1488556270000" expanded="true" signature="2799:3105" ph="{...}" />
-            <marker date="1488556270000" expanded="true" signature="3020:3091" ph="{...}" />
-            <marker date="1488556270000" expanded="true" signature="3351:4328" ph="{...}" />
-            <marker date="1488556270000" expanded="true" signature="3940:4048" ph="{...}" />
-            <marker date="1488556270000" expanded="true" signature="4206:4314" ph="{...}" />
-            <marker date="1488556270000" expanded="true" signature="4436:4672" ph="{...}" />
-            <marker date="1488556270000" expanded="true" signature="4712:5027" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Network/NetworkManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="699">
-          <caret line="63" column="9" lean-forward="false" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
-          <folding>
-            <marker date="1489067356000" expanded="true" signature="6:140" ph="..." />
-            <marker date="1489067356000" expanded="true" signature="185:3116" ph="{...}" />
-            <marker date="1489067356000" expanded="true" signature="539:593" ph="{...}" />
-            <marker date="1489067356000" expanded="true" signature="609:1471" ph="{...}" />
-            <marker date="1489067356000" expanded="true" signature="967:1405" ph="{...}" />
-            <marker date="1489067356000" expanded="true" signature="1499:1645" ph="{...}" />
-            <marker date="1489067356000" expanded="true" signature="1505:1613" ph="/* You will want this here otherwise the server wont notice until someone else sends data to this ... */" />
-            <marker date="1489067356000" expanded="true" signature="1721:3114" ph="{...}" />
-            <marker date="1489067356000" expanded="true" signature="1725:1981" ph="/* When any data is received it will be passed here, ... */" />
-            <marker date="1489067356000" expanded="true" signature="2015:3111" ph="{...}" />
-            <marker date="1489067356000" expanded="true" signature="2137:2301" ph="{...}" />
-            <marker date="1489067356000" expanded="true" signature="2423:3107" ph="{...}" />
-            <marker date="1489067356000" expanded="true" signature="2433:2558" ph="/* Instantiate the player ... */" />
-            <marker date="1489067356000" expanded="true" signature="2988:3102" ph="{...}" />
+            <marker date="1489068171000" expanded="true" signature="6:32" ph="..." />
+            <marker date="1489068171000" expanded="true" signature="68:5154" ph="{...}" />
+            <marker date="1489068171000" expanded="true" signature="123:5152" ph="{...}" />
+            <marker date="1489068171000" expanded="true" signature="1550:1828" ph="{...}" />
+            <marker date="1489068171000" expanded="true" signature="1865:2716" ph="{...}" />
+            <marker date="1489068171000" expanded="true" signature="1921:2138" ph="/* The player is grounded if a circlecast to the groundcheck position hits anything designated as ground ... */" />
+            <marker date="1489068171000" expanded="true" signature="2309:2435" ph="{...}" />
+            <marker date="1489068171000" expanded="true" signature="2779:4801" ph="{...}" />
+            <marker date="1489068171000" expanded="true" signature="2914:3220" ph="{...}" />
+            <marker date="1489068171000" expanded="true" signature="3135:3206" ph="{...}" />
+            <marker date="1489068171000" expanded="true" signature="3466:4445" ph="{...}" />
+            <marker date="1489068171000" expanded="true" signature="3638:3823" ph="/* The Speed animator parameter is set to the absolute value of the horizontal input. ... */" />
+            <marker date="1489068171000" expanded="true" signature="4057:4165" ph="{...}" />
+            <marker date="1489068171000" expanded="true" signature="4323:4431" ph="{...}" />
+            <marker date="1489068171000" expanded="true" signature="4553:4791" ph="{...}" />
+            <marker date="1489068171000" expanded="true" signature="4831:5146" ph="{...}" />
           </folding>
         </state>
       </provider>

@@ -357,7 +357,6 @@
      <Compile Include="Assets\Scripts\Character\PlatformerCharacter.cs" />
      <Compile Include="Assets\Scripts\Interactables\Catapult.cs" />
      <Compile Include="Assets\Scripts\Interactables\CatapultRock.cs" />
-     <Compile Include="Assets\Scripts\MeshCreator.cs" />
      <Compile Include="Assets\Scripts\Network\NetworkManager.cs" />
      <Compile Include="Assets\Scripts\Network\NetworkPlayer.cs" />
      <Compile Include="Assets\Scripts\Network\TagIndex.cs" />

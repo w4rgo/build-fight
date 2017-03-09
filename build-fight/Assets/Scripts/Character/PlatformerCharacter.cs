@@ -46,6 +46,9 @@ namespace Assets.Scripts.Character
 
             // Set the vertical animation
             m_Anim.SetFloat("vSpeed", m_Rigidbody.velocity.y);
+
+            var speed = m_Rigidbody.velocity.magnitude;
+//            m_Anim.SetFloat("Speed", Mathf.Abs(speed));
         }
 
 
@@ -71,7 +74,7 @@ namespace Assets.Scripts.Character
                 move = (crouch ? move*m_CrouchSpeed : move);
 
                 // The Speed animator parameter is set to the absolute value of the horizontal input.
-                m_Anim.SetFloat("Speed", Mathf.Abs(move));
+//                m_Anim.SetFloat("Speed", Mathf.Abs(move));
 
                 // Move the character
                 m_Rigidbody.velocity = new Vector2(move*m_MaxSpeed, m_Rigidbody.velocity.y);
@@ -94,7 +97,7 @@ namespace Assets.Scripts.Character
             {
                 // Add a vertical force to the player.
                 m_Grounded = false;
-                m_Anim.SetBool("Ground", false);
+//                m_Anim.SetBool("Ground", false);
                 m_Rigidbody.AddForce(new Vector2(0f, m_JumpForce));
             }
         }
