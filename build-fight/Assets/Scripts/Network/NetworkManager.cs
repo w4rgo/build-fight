@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Assets.Scripts.Character;
 
 //Access the DarkRift namespace
 using DarkRift;
+using Zenject;
 
 public class NetworkManager : MonoBehaviour
 {
@@ -13,8 +15,17 @@ public class NetworkManager : MonoBehaviour
 	//The player that we will instantiate when someone joins.
 	public GameObject playerObject;
 
+    public GameObject spawnPoint;
 	//A reference to our player
 	Transform player;
+
+    private IInstantiator instantiator;
+
+    [Inject]
+    public void Init(IInstantiator instantiator)
+    {
+        this.instantiator = instantiator;
+    }
 
 	void Start ()
 	{
@@ -29,7 +40,7 @@ public class NetworkManager : MonoBehaviour
 			//Get everyone else to tell us to spawn them a player (this doesn't need the data field so just put whatever)
 			DarkRiftAPI.SendMessageToOthers (TagIndex.Controller, TagIndex.ControllerSubjects.JoinMessage, "hi");
 			//Then tell them to spawn us a player! (this time the data is the spawn position)
-			DarkRiftAPI.SendMessageToAll (TagIndex.Controller, TagIndex.ControllerSubjects.SpawnPlayer, new Vector3(0f,0f,0f));
+			DarkRiftAPI.SendMessageToAll (TagIndex.Controller, TagIndex.ControllerSubjects.SpawnPlayer, spawnPoint.transform.position);
 		}
 		else
 			Debug.Log ("Failed to connect to DarkRift Server!");
@@ -62,14 +73,18 @@ public class NetworkManager : MonoBehaviour
 			if (subject == TagIndex.ControllerSubjects.SpawnPlayer)
 			{
 				//Instantiate the player
-				GameObject clone = (GameObject)Instantiate (playerObject, (Vector3)data, Quaternion.identity);
+//				GameObject clone = (GameObject)Instantiate (playerObject, (Vector3)data, Quaternion.identity);
+			    GameObject clone = instantiator.InstantiatePrefab(playerObject);
+			    clone.transform.position = (Vector3) data;
+			    clone.transform.rotation = Quaternion.identity;
+
 				//Tell the network player who owns it so it tunes into the right updates.
 				clone.GetComponent<NetworkPlayer>().networkID = senderID;
 
 				//If it's our player being created allow control and set the reference
 				if (senderID == DarkRiftAPI.id)
 				{
-					clone.GetComponent<Player>().isControllable = true;
+					clone.GetComponent<CharacterUserControl>().IsControllable = true;
 					player = clone.transform;
 				}
 			}

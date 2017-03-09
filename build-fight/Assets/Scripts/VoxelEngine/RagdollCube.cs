@@ -12,7 +12,6 @@ namespace Assets.Scripts.CustomObjects.VoxelEngine
             {
                 PoolManager.ReleaseObject(this.gameObject);
             }
-            Debug.Log(other);
         }
     }
 }

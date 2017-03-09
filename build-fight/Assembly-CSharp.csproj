@@ -82,10 +82,7 @@
      <Compile Include="Assets\Dependencies\DarkRift\HeavySyncDemo\HSNetworkManager.cs" />
      <Compile Include="Assets\Dependencies\DarkRift\HeavySyncDemo\ObjectSpawner.cs" />
      <Compile Include="Assets\Dependencies\DarkRift\HeavySyncDemo\SyncCharacter.cs" />
-     <Compile Include="Assets\Dependencies\DarkRift\PlayerDemo\NetworkManager.cs" />
-     <Compile Include="Assets\Dependencies\DarkRift\PlayerDemo\NetworkPlayer.cs" />
      <Compile Include="Assets\Dependencies\DarkRift\PlayerDemo\Player.cs" />
-     <Compile Include="Assets\Dependencies\DarkRift\PlayerDemo\TagIndex.cs" />
      <Compile Include="Assets\Dependencies\Standard Assets\2D\Scripts\Camera2DFollow.cs" />
      <Compile Include="Assets\Dependencies\Standard Assets\2D\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Dependencies\Standard Assets\2D\Scripts\Platformer2DUserControl.cs" />
@@ -361,6 +358,9 @@
      <Compile Include="Assets\Scripts\Interactables\Catapult.cs" />
      <Compile Include="Assets\Scripts\Interactables\CatapultRock.cs" />
      <Compile Include="Assets\Scripts\MeshCreator.cs" />
+     <Compile Include="Assets\Scripts\Network\NetworkManager.cs" />
+     <Compile Include="Assets\Scripts\Network\NetworkPlayer.cs" />
+     <Compile Include="Assets\Scripts\Network\TagIndex.cs" />
      <Compile Include="Assets\Scripts\Pooling\ObjectPool.cs" />
      <Compile Include="Assets\Scripts\Pooling\ObjectPoolContainer.cs" />
      <Compile Include="Assets\Scripts\Pooling\PoolManager.cs" />
@@ -376,7 +376,6 @@
      <Compile Include="Assets\Scripts\VoxelEngine\WorldMeshView.cs" />
      <Compile Include="Assets\Scripts\VoxelEngine\WorldModifier.cs" />
      <Compile Include="Assets\Scripts\VoxelEngine\WorldObjectsView.cs" />
-     <Compile Include="Assets\Scripts\WorldGenerator.cs" />
      <None Include="Assets\Dependencies\DarkRift\DarkRift\Plugins\Readme.txt" />
      <None Include="Assets\Dependencies\DarkRift\PlayerDemo\Readme.txt" />
      <None Include="Assets\Dependencies\DarkRift\EmbeddedServer\ReadMe.txt" />

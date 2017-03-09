@@ -8,7 +8,10 @@ namespace Assets.Scripts.Character
     [RequireComponent(typeof(PlatformerCharacter))]
     public class CharacterUserControl : MonoBehaviour
     {
-        [SerializeField] private GameObject mouseBlockSelector;
+        [SerializeField] private GameObject mouseBlockSelectorPrefab;
+        private GameObject mouseBlockSelector;
+        public bool IsControllable { get; set; }
+
 
         private PlatformerCharacter m_Character;
         private bool m_Jump;
@@ -25,9 +28,22 @@ namespace Assets.Scripts.Character
             m_Character = GetComponent<PlatformerCharacter>();
         }
 
+        private void Start()
+        {
+            if (!IsControllable)
+            {
+                return;
+            }
+            mouseBlockSelector = GameObject.Instantiate(mouseBlockSelectorPrefab);
+        }
 
         private void Update()
         {
+            if (!IsControllable)
+            {
+                return;
+            }
+
             if (!m_Jump)
             {
                 // Read the jump input in Update so button presses aren't missed.
@@ -48,6 +64,10 @@ namespace Assets.Scripts.Character
 
         private void FixedUpdate()
         {
+            if (!IsControllable)
+            {
+                return;
+            }
             // Read the inputs.
             bool crouch = Input.GetKey(KeyCode.LeftControl);
             float h = CrossPlatformInputManager.GetAxis("Horizontal");
