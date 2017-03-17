@@ -46,6 +46,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\DPhysics\Core\Scripts\DPhysics\Body.cs" />
+     <Compile Include="Assets\DPhysics\Core\Scripts\DPhysics\Bounder.cs" />
+     <Compile Include="Assets\DPhysics\Core\Scripts\DPhysics\CollisionPair.cs" />
+     <Compile Include="Assets\DPhysics\Core\Scripts\DPhysics\CollisionResult.cs" />
+     <Compile Include="Assets\DPhysics\Core\Scripts\DPhysics\DCollider.cs" />
+     <Compile Include="Assets\DPhysics\Core\Scripts\DPhysics\DPhysicsManager.cs" />
+     <Compile Include="Assets\DPhysics\Core\Scripts\DPhysics\Partition.cs" />
+     <Compile Include="Assets\DPhysics\Core\Scripts\FInt.cs" />
+     <Compile Include="Assets\DPhysics\Core\Scripts\Mathd.cs" />
+     <Compile Include="Assets\DPhysics\Core\Scripts\Vector2d.cs" />
+     <Compile Include="Assets\DPhysics\Examples\Newton&apos;s Balls\NewtonsBalls.cs" />
+     <Compile Include="Assets\DPhysics\Examples\Newton&apos;s Box\NewtonsBox.cs" />
+     <Compile Include="Assets\DPhysics\Multiplayer\Scripts\Client.cs" />
+     <Compile Include="Assets\DPhysics\Multiplayer\Scripts\Command.cs" />
+     <Compile Include="Assets\DPhysics\Multiplayer\Scripts\CommunicationCodes.cs" />
+     <Compile Include="Assets\DPhysics\Multiplayer\Scripts\Frame.cs" />
+     <Compile Include="Assets\DPhysics\Multiplayer\Scripts\Miscellaneous\RTSCamera.cs" />
+     <Compile Include="Assets\DPhysics\Multiplayer\Scripts\Miscellaneous\TestCommands.cs" />
+     <Compile Include="Assets\DPhysics\Multiplayer\Scripts\Plugins\DarkRiftReciever.cs" />
      <Compile Include="Assets\Dependencies\Anima2D\Examples\Scripts\CharacterMotion.cs" />
      <Compile Include="Assets\Dependencies\Anima2D\Examples\Scripts\Follow.cs" />
      <Compile Include="Assets\Dependencies\Anima2D\Examples\Scripts\SkinnedMeshCombiner.cs" />
@@ -70,19 +89,6 @@
      <Compile Include="Assets\Dependencies\Anima2D\Scripts\SpriteMesh.cs" />
      <Compile Include="Assets\Dependencies\Anima2D\Scripts\SpriteMeshAnimation.cs" />
      <Compile Include="Assets\Dependencies\Anima2D\Scripts\SpriteMeshInstance.cs" />
-     <Compile Include="Assets\Dependencies\DarkRift\CubeDemo\CubeMove.cs" />
-     <Compile Include="Assets\Dependencies\DarkRift\CubeDemo\CubeNetworkManager.cs" />
-     <Compile Include="Assets\Dependencies\DarkRift\CustomSerialisationDemo\CSCubeMove.cs" />
-     <Compile Include="Assets\Dependencies\DarkRift\CustomSerialisationDemo\CSCubeNetworkManager.cs" />
-     <Compile Include="Assets\Dependencies\DarkRift\DarkRift\Plugins\DarkRiftReceiver.cs" />
-     <Compile Include="Assets\Dependencies\DarkRift\EmbeddedServer\EmbeddedCubeManager.cs" />
-     <Compile Include="Assets\Dependencies\DarkRift\EmbeddedServer\EmbeddedCubeMove.cs" />
-     <Compile Include="Assets\Dependencies\DarkRift\EmbeddedServer\Server.cs" />
-     <Compile Include="Assets\Dependencies\DarkRift\HeavySyncDemo\CharacterMovement.cs" />
-     <Compile Include="Assets\Dependencies\DarkRift\HeavySyncDemo\HSNetworkManager.cs" />
-     <Compile Include="Assets\Dependencies\DarkRift\HeavySyncDemo\ObjectSpawner.cs" />
-     <Compile Include="Assets\Dependencies\DarkRift\HeavySyncDemo\SyncCharacter.cs" />
-     <Compile Include="Assets\Dependencies\DarkRift\PlayerDemo\Player.cs" />
      <Compile Include="Assets\Dependencies\Standard Assets\2D\Scripts\Camera2DFollow.cs" />
      <Compile Include="Assets\Dependencies\Standard Assets\2D\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Dependencies\Standard Assets\2D\Scripts\Platformer2DUserControl.cs" />
@@ -375,15 +381,9 @@
      <Compile Include="Assets\Scripts\VoxelEngine\WorldMeshView.cs" />
      <Compile Include="Assets\Scripts\VoxelEngine\WorldModifier.cs" />
      <Compile Include="Assets\Scripts\VoxelEngine\WorldObjectsView.cs" />
-     <None Include="Assets\Dependencies\DarkRift\DarkRift\Plugins\Readme.txt" />
-     <None Include="Assets\Dependencies\DarkRift\PlayerDemo\Readme.txt" />
-     <None Include="Assets\Dependencies\DarkRift\EmbeddedServer\ReadMe.txt" />
-     <None Include="Assets\Dependencies\DarkRift\ChangeLog.txt" />
-     <None Include="Assets\Dependencies\DarkRift\CustomSerialisationDemo\Readme.txt" />
+     <None Include="Assets\DPhysics\Multiplayer\Scripts\Plugins\Readme.txt" />
      <None Include="Assets\Dependencies\Anima2D\Version.txt" />
-     <None Include="Assets\Dependencies\DarkRift\CubeDemo\Readme.txt" />
-     <None Include="Assets\Dependencies\DarkRift\EmbeddedServer\DarkRift.xml" />
-     <None Include="Assets\Dependencies\DarkRift\DarkRift\Plugins\DarkRiftAPI.xml" />
+     <None Include="Assets\DPhysics\Multiplayer\Scripts\Plugins\DarkRiftAPI.xml" />
      <None Include="Assets\Dependencies\Zenject\LICENSE.txt" />
      <None Include="Assets\Dependencies\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Dependencies\Zenject\Version.txt" />
@@ -393,9 +393,7 @@
      <None Include="Assets\Dependencies\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
      <None Include="Assets\Dependencies\Anima2D\Readme.txt" />
      <None Include="Assets\Dependencies\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
-     <None Include="Assets\Dependencies\DarkRift\HeavySyncDemo\Readme.txt" />
      <None Include="Assets\Dependencies\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
-     <None Include="Assets\Dependencies\DarkRift\Readme.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity5.5/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -415,13 +413,10 @@
  <HintPath>/Applications/Unity5.5/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
  <Reference Include="DarkRiftAPI">
- <HintPath>/Users/fruiz/Dev/Personal/build-fight/build-fight/Assets/Dependencies/DarkRift/DarkRift/Plugins/DarkRiftAPI.dll</HintPath>
+ <HintPath>/Users/fruiz/Dev/Personal/build-fight/build-fight/Assets/DPhysics/Multiplayer/Scripts/Plugins/DarkRiftAPI.dll</HintPath>
  </Reference>
  <Reference Include="Transmission">
- <HintPath>/Users/fruiz/Dev/Personal/build-fight/build-fight/Assets/Dependencies/DarkRift/DarkRift/Plugins/Transmission.dll</HintPath>
- </Reference>
- <Reference Include="DarkRift">
- <HintPath>/Users/fruiz/Dev/Personal/build-fight/build-fight/Assets/Dependencies/DarkRift/EmbeddedServer/DarkRift.dll</HintPath>
+ <HintPath>/Users/fruiz/Dev/Personal/build-fight/build-fight/Assets/DPhysics/Multiplayer/Scripts/Plugins/Transmission.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

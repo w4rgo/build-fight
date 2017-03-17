@@ -46,6 +46,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\DPhysics\Editor\EditorDCollider.cs" />
      <Compile Include="Assets\Dependencies\Anima2D\Scripts\Editor\AnimationBaker.cs" />
      <Compile Include="Assets\Dependencies\Anima2D\Scripts\Editor\AnimationFixer\AnimationFixer.cs" />
      <Compile Include="Assets\Dependencies\Anima2D\Scripts\Editor\AnimationWindowExtra\AnimationWindowExtra.cs" />
@@ -198,15 +199,9 @@
      <Compile Include="Assets\Dependencies\Zenject\Source\Editor\ZenMenuItems.cs" />
      <Compile Include="Assets\Dependencies\Zenject\Source\Editor\ZenUnityEditorUtil.cs" />
      <Compile Include="Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
-     <None Include="Assets\Dependencies\DarkRift\DarkRift\Plugins\Readme.txt" />
-     <None Include="Assets\Dependencies\DarkRift\PlayerDemo\Readme.txt" />
-     <None Include="Assets\Dependencies\DarkRift\EmbeddedServer\ReadMe.txt" />
-     <None Include="Assets\Dependencies\DarkRift\ChangeLog.txt" />
-     <None Include="Assets\Dependencies\DarkRift\CustomSerialisationDemo\Readme.txt" />
+     <None Include="Assets\DPhysics\Multiplayer\Scripts\Plugins\Readme.txt" />
      <None Include="Assets\Dependencies\Anima2D\Version.txt" />
-     <None Include="Assets\Dependencies\DarkRift\CubeDemo\Readme.txt" />
-     <None Include="Assets\Dependencies\DarkRift\EmbeddedServer\DarkRift.xml" />
-     <None Include="Assets\Dependencies\DarkRift\DarkRift\Plugins\DarkRiftAPI.xml" />
+     <None Include="Assets\DPhysics\Multiplayer\Scripts\Plugins\DarkRiftAPI.xml" />
      <None Include="Assets\Dependencies\Zenject\LICENSE.txt" />
      <None Include="Assets\Dependencies\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Dependencies\Zenject\Version.txt" />
@@ -216,9 +211,7 @@
      <None Include="Assets\Dependencies\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
      <None Include="Assets\Dependencies\Anima2D\Readme.txt" />
      <None Include="Assets\Dependencies\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
-     <None Include="Assets\Dependencies\DarkRift\HeavySyncDemo\Readme.txt" />
      <None Include="Assets\Dependencies\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
-     <None Include="Assets\Dependencies\DarkRift\Readme.txt" />
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>/Applications/Unity5.5/Unity.app/Contents/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
@@ -267,15 +260,6 @@
  <Reference Include="UnityEngine.VR">
  <HintPath>/Applications/Unity5.5/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
- <Reference Include="DarkRiftAPI">
- <HintPath>/Users/fruiz/Dev/Personal/build-fight/build-fight/Assets/Dependencies/DarkRift/DarkRift/Plugins/DarkRiftAPI.dll</HintPath>
- </Reference>
- <Reference Include="Transmission">
- <HintPath>/Users/fruiz/Dev/Personal/build-fight/build-fight/Assets/Dependencies/DarkRift/DarkRift/Plugins/Transmission.dll</HintPath>
- </Reference>
- <Reference Include="DarkRift">
- <HintPath>/Users/fruiz/Dev/Personal/build-fight/build-fight/Assets/Dependencies/DarkRift/EmbeddedServer/DarkRift.dll</HintPath>
- </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>/Applications/Unity5.5/Unity.app/Contents/Managed/UnityEditor.Graphs.dll</HintPath>
  </Reference>
@@ -285,6 +269,16 @@
  <Reference Include="UnityEditor.OSXStandalone.Extensions">
  <HintPath>/Applications/Unity5.5/Unity.app/Contents/PlaybackEngines/macstandalonesupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
  </Reference>
+ <Reference Include="DarkRiftAPI">
+ <HintPath>/Users/fruiz/Dev/Personal/build-fight/build-fight/Assets/DPhysics/Multiplayer/Scripts/Plugins/DarkRiftAPI.dll</HintPath>
+ </Reference>
+ <Reference Include="Transmission">
+ <HintPath>/Users/fruiz/Dev/Personal/build-fight/build-fight/Assets/DPhysics/Multiplayer/Scripts/Plugins/Transmission.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp.csproj">
+      <Project>{5A9C969A-8A8B-7F24-AC89-7CB1A57D0C24}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3d80de35-fb15-4db8-bb19-6487206b27a4" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Room.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DPhysics.Lockstep/Room.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="756">
+              <caret line="42" column="22" lean-forward="false" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
+              <folding>
+                <marker date="1489769219000" expanded="true" signature="6:131" ph="..." />
+                <marker date="1489769219000" expanded="true" signature="159:3788" ph="{...}" />
+                <marker date="1489769219000" expanded="true" signature="166:336" ph="/// Represents a room where every player receives the same input. ... " />
+                <marker date="1489769219000" expanded="true" signature="358:3786" ph="{...}" />
+                <marker date="1489769219000" expanded="true" signature="373:565" ph="/// Defines the maximum amount of players that can be in a room. ... " />
+                <marker date="1489769219000" expanded="true" signature="625:771" ph="/// Constructs a Room and sets its identification number as ID. ... " />
+                <marker date="1489769219000" expanded="true" signature="802:847" ph="{...}" />
+                <marker date="1489769219000" expanded="true" signature="856:930" ph="/// The players in this room. ... " />
+                <marker date="1489769219000" expanded="true" signature="999:1083" ph="/// The package to send the next frame. ... " />
+                <marker date="1489769219000" expanded="true" signature="1153:1253" ph="/// Describes whether or not this Room has started yet. ... " />
+                <marker date="1489769219000" expanded="true" signature="1299:1387" ph="/// Describes the amount of joined players. ... " />
+                <marker date="1489769219000" expanded="true" signature="1432:1594" ph="/// Similar to the step count client-side. This value gets serialized and describes which frame a game packet is  ... " />
+                <marker date="1489769219000" expanded="true" signature="1641:1758" ph="/// This Room's unique ID. Used for accessing the Room in Core.AllRooms. ... " />
+                <marker date="1489769219000" expanded="true" signature="1797:1945" ph="/// Simulates the room, distributing information to players as necessary and performing any Room logic. ... " />
+                <marker date="1489769219000" expanded="true" signature="1977:2114" ph="{...}" />
+                <marker date="1489769219000" expanded="true" signature="2012:2104" ph="{...}" />
+                <marker date="1489769219000" expanded="true" signature="2124:2263" ph="/// A player's game data gets routed to his room here. ... " />
+                <marker date="1489769219000" expanded="true" signature="2316:2377" ph="{...}" />
+                <marker date="1489769219000" expanded="true" signature="2386:2483" ph="/// Distributes a frame to every player in the Room. ... " />
+                <marker date="1489769219000" expanded="true" signature="2522:2738" ph="{...}" />
+                <marker date="1489769219000" expanded="true" signature="2581:2694" ph="{...}" />
+                <marker date="1489769219000" expanded="true" signature="2748:2953" ph="/// Returns true if the room is full and can start, false if it still needs more players. ... " />
+                <marker date="1489769219000" expanded="true" signature="2999:3363" ph="{...}" />
+                <marker date="1489769219000" expanded="true" signature="3161:3233" ph="{...}" />
+                <marker date="1489769219000" expanded="true" signature="3254:3324" ph="{...}" />
+                <marker date="1489769219000" expanded="true" signature="3372:3531" ph="/// Returns true if room has no players and can end, false if it still has players ... " />
+                <marker date="1489769219000" expanded="true" signature="3580:3780" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.cnf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../settings.cnf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DarkRiftServer.exe.config" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../DarkRift Server - Free/DarkRiftServer.exe.config">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/DPhysics.Lockstep/Room.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="2560" />
+    <option name="height" value="1413" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DPhysics.Lockstep (1 project)" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DPhysics.Lockstep" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DPhysics.Lockstep (1 project)" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DPhysics.Lockstep" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="References" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="preferences.dotNetCore" />
+  </component>
+  <component name="RunManager" selected=".NET Project.Default">
+    <configuration default="true" type="DotNetProject" factoryName=".NET Project">
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <envs />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue=".NET Project.Default" />
+    </list>
+  </component>
+  <component name="RuntimeDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3d80de35-fb15-4db8-bb19-6487206b27a4" name="Default" comment="" />
+      <created>1489767968825</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1489767968825</updated>
+      <workItem from="1489767970166" duration="12000" />
+      <workItem from="1489767984814" duration="1920000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1932000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="2560" height="1413" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Change Signature" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25377283" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329296" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/DPhysics.Lockstep/Room.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1489769219000" expanded="true" signature="6:131" ph="..." />
+            <marker date="1489769219000" expanded="true" signature="159:3788" ph="{...}" />
+            <marker date="1489769219000" expanded="true" signature="166:336" ph="/// Represents a room where every player receives the same input. ... " />
+            <marker date="1489769219000" expanded="true" signature="358:3786" ph="{...}" />
+            <marker date="1489769219000" expanded="true" signature="373:565" ph="/// Defines the maximum amount of players that can be in a room. ... " />
+            <marker date="1489769219000" expanded="true" signature="625:771" ph="/// Constructs a Room and sets its identification number as ID. ... " />
+            <marker date="1489769219000" expanded="true" signature="802:847" ph="{...}" />
+            <marker date="1489769219000" expanded="true" signature="856:930" ph="/// The players in this room. ... " />
+            <marker date="1489769219000" expanded="true" signature="999:1083" ph="/// The package to send the next frame. ... " />
+            <marker date="1489769219000" expanded="true" signature="1153:1253" ph="/// Describes whether or not this Room has started yet. ... " />
+            <marker date="1489769219000" expanded="true" signature="1299:1387" ph="/// Describes the amount of joined players. ... " />
+            <marker date="1489769219000" expanded="true" signature="1432:1594" ph="/// Similar to the step count client-side. This value gets serialized and describes which frame a game packet is  ... " />
+            <marker date="1489769219000" expanded="true" signature="1641:1758" ph="/// This Room's unique ID. Used for accessing the Room in Core.AllRooms. ... " />
+            <marker date="1489769219000" expanded="true" signature="1797:1945" ph="/// Simulates the room, distributing information to players as necessary and performing any Room logic. ... " />
+            <marker date="1489769219000" expanded="true" signature="1977:2114" ph="{...}" />
+            <marker date="1489769219000" expanded="true" signature="2012:2104" ph="{...}" />
+            <marker date="1489769219000" expanded="true" signature="2124:2263" ph="/// A player's game data gets routed to his room here. ... " />
+            <marker date="1489769219000" expanded="true" signature="2316:2377" ph="{...}" />
+            <marker date="1489769219000" expanded="true" signature="2386:2483" ph="/// Distributes a frame to every player in the Room. ... " />
+            <marker date="1489769219000" expanded="true" signature="2522:2738" ph="{...}" />
+            <marker date="1489769219000" expanded="true" signature="2581:2694" ph="{...}" />
+            <marker date="1489769219000" expanded="true" signature="2748:2953" ph="/// Returns true if the room is full and can start, false if it still needs more players. ... " />
+            <marker date="1489769219000" expanded="true" signature="2999:3363" ph="{...}" />
+            <marker date="1489769219000" expanded="true" signature="3161:3233" ph="{...}" />
+            <marker date="1489769219000" expanded="true" signature="3254:3324" ph="{...}" />
+            <marker date="1489769219000" expanded="true" signature="3372:3531" ph="/// Returns true if room has no players and can end, false if it still has players ... " />
+            <marker date="1489769219000" expanded="true" signature="3580:3780" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../settings.cnf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../DarkRift Server - Free/DarkRiftServer.exe.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DPhysics.Lockstep/Room.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="42" column="22" lean-forward="false" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
+          <folding>
+            <marker date="1489769219000" expanded="true" signature="6:131" ph="..." />
+            <marker date="1489769219000" expanded="true" signature="159:3788" ph="{...}" />
+            <marker date="1489769219000" expanded="true" signature="166:336" ph="/// Represents a room where every player receives the same input. ... " />
+            <marker date="1489769219000" expanded="true" signature="358:3786" ph="{...}" />
+            <marker date="1489769219000" expanded="true" signature="373:565" ph="/// Defines the maximum amount of players that can be in a room. ... " />
+            <marker date="1489769219000" expanded="true" signature="625:771" ph="/// Constructs a Room and sets its identification number as ID. ... " />
+            <marker date="1489769219000" expanded="true" signature="802:847" ph="{...}" />
+            <marker date="1489769219000" expanded="true" signature="856:930" ph="/// The players in this room. ... " />
+            <marker date="1489769219000" expanded="true" signature="999:1083" ph="/// The package to send the next frame. ... " />
+            <marker date="1489769219000" expanded="true" signature="1153:1253" ph="/// Describes whether or not this Room has started yet. ... " />
+            <marker date="1489769219000" expanded="true" signature="1299:1387" ph="/// Describes the amount of joined players. ... " />
+            <marker date="1489769219000" expanded="true" signature="1432:1594" ph="/// Similar to the step count client-side. This value gets serialized and describes which frame a game packet is  ... " />
+            <marker date="1489769219000" expanded="true" signature="1641:1758" ph="/// This Room's unique ID. Used for accessing the Room in Core.AllRooms. ... " />
+            <marker date="1489769219000" expanded="true" signature="1797:1945" ph="/// Simulates the room, distributing information to players as necessary and performing any Room logic. ... " />
+            <marker date="1489769219000" expanded="true" signature="1977:2114" ph="{...}" />
+            <marker date="1489769219000" expanded="true" signature="2012:2104" ph="{...}" />
+            <marker date="1489769219000" expanded="true" signature="2124:2263" ph="/// A player's game data gets routed to his room here. ... " />
+            <marker date="1489769219000" expanded="true" signature="2316:2377" ph="{...}" />
+            <marker date="1489769219000" expanded="true" signature="2386:2483" ph="/// Distributes a frame to every player in the Room. ... " />
+            <marker date="1489769219000" expanded="true" signature="2522:2738" ph="{...}" />
+            <marker date="1489769219000" expanded="true" signature="2581:2694" ph="{...}" />
+            <marker date="1489769219000" expanded="true" signature="2748:2953" ph="/// Returns true if the room is full and can start, false if it still needs more players. ... " />
+            <marker date="1489769219000" expanded="true" signature="2999:3363" ph="{...}" />
+            <marker date="1489769219000" expanded="true" signature="3161:3233" ph="{...}" />
+            <marker date="1489769219000" expanded="true" signature="3254:3324" ph="{...}" />
+            <marker date="1489769219000" expanded="true" signature="3372:3531" ph="/// Returns true if room has no players and can end, false if it still has players ... " />
+            <marker date="1489769219000" expanded="true" signature="3580:3780" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -14,12 +14,12 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="NetworkManager.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Network/NetworkManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1059">
-              <caret line="83" column="48" lean-forward="false" selection-start-line="83" selection-start-column="48" selection-end-line="83" selection-end-column="48" />
+            <state relative-caret-position="0">
+              <caret line="0" column="18" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
               <folding>
                 <marker date="1489067356000" expanded="true" signature="6:140" ph="..." />
                 <marker date="1489067356000" expanded="true" signature="185:3116" ph="{...}" />
@@ -43,7 +43,7 @@
       <file leaf-file-name="CharacterUserControl.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterUserControl.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-188">
+            <state relative-caret-position="-219">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <marker date="1489067382000" expanded="true" signature="6:127" ph="..." />
@@ -65,29 +65,107 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlatformerCharacter.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PlatformerCharacter.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Character/PlatformerCharacter.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="64" column="13" lean-forward="false" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+            <state relative-caret-position="270">
+              <caret line="50" column="16" lean-forward="false" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
               <folding>
-                <marker date="1489068171000" expanded="true" signature="6:32" ph="..." />
-                <marker date="1489068171000" expanded="true" signature="68:5154" ph="{...}" />
-                <marker date="1489068171000" expanded="true" signature="123:5152" ph="{...}" />
-                <marker date="1489068171000" expanded="true" signature="1550:1828" ph="{...}" />
-                <marker date="1489068171000" expanded="true" signature="1865:2716" ph="{...}" />
-                <marker date="1489068171000" expanded="true" signature="1921:2138" ph="/* The player is grounded if a circlecast to the groundcheck position hits anything designated as ground ... */" />
-                <marker date="1489068171000" expanded="true" signature="2309:2435" ph="{...}" />
-                <marker date="1489068171000" expanded="true" signature="2779:4801" ph="{...}" />
-                <marker date="1489068171000" expanded="true" signature="2914:3220" ph="{...}" />
-                <marker date="1489068171000" expanded="true" signature="3135:3206" ph="{...}" />
-                <marker date="1489068171000" expanded="true" signature="3466:4445" ph="{...}" />
-                <marker date="1489068171000" expanded="true" signature="3638:3823" ph="/* The Speed animator parameter is set to the absolute value of the horizontal input. ... */" />
-                <marker date="1489068171000" expanded="true" signature="4057:4165" ph="{...}" />
-                <marker date="1489068171000" expanded="true" signature="4323:4431" ph="{...}" />
-                <marker date="1489068171000" expanded="true" signature="4553:4791" ph="{...}" />
-                <marker date="1489068171000" expanded="true" signature="4831:5146" ph="{...}" />
+                <marker date="1489763346000" expanded="true" signature="68:5152" ph="{...}" />
+                <marker date="1489763346000" expanded="true" signature="123:5150" ph="{...}" />
+                <marker date="1489763346000" expanded="true" signature="1865:2714" ph="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewtonsBalls.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/DPhysics/Examples/Newton's Balls/NewtonsBalls.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="15" column="89" lean-forward="false" selection-start-line="15" selection-start-column="89" selection-end-line="15" selection-end-column="89" />
+              <folding>
+                <marker date="1461282242000" expanded="true" signature="6:60" ph="..." />
+                <marker date="1461282242000" expanded="true" signature="62:374" ph="/// Here's a neat example of what you can do with DPhysics that other physics engine can't. ... " />
+                <marker date="1461282242000" expanded="true" signature="416:3912" ph="{...}" />
+                <marker date="1461282242000" expanded="true" signature="608:2202" ph="{...}" />
+                <marker date="1461282242000" expanded="true" signature="1175:1276" ph="/* Instantiating our walls first ... */" />
+                <marker date="1461282242000" expanded="true" signature="1639:2199" ph="{...}" />
+                <marker date="1461282242000" expanded="true" signature="1874:2195" ph="{...}" />
+                <marker date="1461282242000" expanded="true" signature="2224:2310" ph="{...}" />
+                <marker date="1461282242000" expanded="true" signature="2327:2444" ph="{...}" />
+                <marker date="1461282242000" expanded="true" signature="2559:3910" ph="{...}" />
+                <marker date="1461282242000" expanded="true" signature="2596:3190" ph="{...}" />
+                <marker date="1461282242000" expanded="true" signature="2722:2749" ph="{...}" />
+                <marker date="1461282242000" expanded="true" signature="2887:2920" ph="{...}" />
+                <marker date="1461282242000" expanded="true" signature="3054:3087" ph="{...}" />
+                <marker date="1461282242000" expanded="true" signature="3124:3186" ph="{...}" />
+                <marker date="1461282242000" expanded="true" signature="3190:3667" ph="{...}" />
+                <marker date="1461282242000" expanded="true" signature="3232:3663" ph="{...}" />
+                <marker date="1461282242000" expanded="true" signature="3242:3409" ph="/* This dessimilate and destroys all existing physics objects. ... */" />
+                <marker date="1461282242000" expanded="true" signature="3473:3637" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Client.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/DPhysics/Multiplayer/Scripts/Client.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="347">
+              <caret line="127" column="64" lean-forward="true" selection-start-line="127" selection-start-column="64" selection-end-line="127" selection-end-column="64" />
+              <folding>
+                <marker date="1461282242000" expanded="true" signature="6:110" ph="..." />
+                <marker date="1461282242000" expanded="true" signature="147:5934" ph="{...}" />
+                <marker date="1461282242000" expanded="true" signature="151:364" ph="Initialization" />
+                <marker date="1461282242000" expanded="true" signature="262:352" ph="{...}" />
+                <marker date="1461282242000" expanded="true" signature="367:2978" ph="Communication" />
+                <marker date="1461282242000" expanded="true" signature="523:1226" ph="{...}" />
+                <marker date="1461282242000" expanded="true" signature="698:893" ph="{...}" />
+                <marker date="1461282242000" expanded="true" signature="773:889" ph="{...}" />
+                <marker date="1461282242000" expanded="true" signature="914:1133" ph="{...}" />
+                <marker date="1461282242000" expanded="true" signature="1229:1298" ph="/// Handles data received from server. ... " />
+                <marker date="1461282242000" expanded="true" signature="1360:2515" ph="{...}" />
+                <marker date="1461282242000" expanded="true" signature="1391:2512" ph="{...}" />
+                <marker date="1461282242000" expanded="true" signature="1395:1621" ph="/* Meta data includes connection, room initialization, and subject. ... */" />
+                <marker date="1461282242000" expanded="true" signature="1982:2320" ph="{...}" />
+                <marker date="1461282242000" expanded="true" signature="2197:2315" ph="{...}" />
+                <marker date="1461282242000" expanded="true" signature="2232:2282" ph="{...}" />
+                <marker date="1461282242000" expanded="true" signature="2358:2498" ph="{...}" />
+                <marker date="1461282242000" expanded="true" signature="2517:2634" ph="/// Sends a command to the server, to be distributed to everyone in the player's room. ... " />
+                <marker date="1461282242000" expanded="true" signature="2680:2859" ph="{...}" />
+                <marker date="1461282242000" expanded="true" signature="2931:2966" ph="{...}" />
+                <marker date="1461282242000" expanded="true" signature="2981:5776" ph="Simulation" />
+                <marker date="1461282242000" expanded="true" signature="3001:3207" ph="/// The target simulation rate. In ideal networking conditions, simulation will run at this rate. Make sure you c ... " />
+                <marker date="1461282242000" expanded="true" signature="3257:3380" ph="/// Frames are stored here. When saving a game, this is what you would serialize and replay. ... " />
+                <marker date="1461282242000" expanded="true" signature="3458:3617" ph="/// Represents how many simulation frames have passed; given the same input and step, all clients will have the s ... " />
+                <marker date="1461282242000" expanded="true" signature="3668:3705" ph="{...}" />
+                <marker date="1461282242000" expanded="true" signature="3675:3702" ph="{...}" />
+                <marker date="1461282242000" expanded="true" signature="3871:5063" ph="{...}" />
+                <marker date="1461282242000" expanded="true" signature="3903:4109" ph="/* Adjust the simulation rate based on how many frames in advance we have ... */" />
+                <marker date="1461282242000" expanded="true" signature="4131:5060" ph="{...}" />
+                <marker date="1461282242000" expanded="true" signature="4275:4349" ph="{...}" />
+                <marker date="1461282242000" expanded="true" signature="4692:4835" ph="{...}" />
+                <marker date="1461282242000" expanded="true" signature="4702:4799" ph="/* Executes the command... ... */" />
+                <marker date="1461282242000" expanded="true" signature="4904:4928" ph="{...}" />
+                <marker date="1461282242000" expanded="true" signature="5065:5134" ph="/// Spawns and initializes 200 objects ... " />
+                <marker date="1461282242000" expanded="true" signature="5160:5764" ph="{...}" />
+                <marker date="1461282242000" expanded="true" signature="5352:5761" ph="{...}" />
+                <marker date="1461282242000" expanded="true" signature="5390:5757" ph="{...}" />
+                <marker date="1461282242000" expanded="true" signature="5691:5752" ph="Spawn your custom physics object here" />
+                <marker date="1461282242000" expanded="true" signature="5779:5932" ph="Visualization: Communicating with Unity's rendering" />
+                <marker date="1461282242000" expanded="true" signature="5862:5920" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AudioSpatializerMicrosoft.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.local/share/JetBrains/Shared/v08/DecompilerCache/decompiler/A1B84B1F-1D41-4254-A882-8EFC3B8635BB/06/55c5fc94/AudioSpatializerMicrosoft.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="810">
+              <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -133,6 +211,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterUserControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/VoxelEngine/RagdollCube.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/PlatformerCharacter.cs" />
+        <option value="$PROJECT_DIR$/Assets/DPhysics/Examples/Newton's Balls/NewtonsBalls.cs" />
       </list>
     </option>
   </component>
@@ -167,6 +246,28 @@
               <option name="myItemId" value="build-fight (2 projects)" />
               <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assembly-CSharp-Editor" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assets" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build-fight (2 projects)" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assembly-CSharp-Editor" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -208,37 +309,49 @@
               <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Scripts" />
+              <option name="myItemId" value="DPhysics" />
               <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Network" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build-fight (2 projects)" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Assembly-CSharp" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Assets" />
+              <option name="myItemId" value="Multiplayer" />
               <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Scripts" />
               <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Character" />
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build-fight (2 projects)" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assembly-CSharp" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assets" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DPhysics" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Multiplayer" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Scripts" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Miscellaneous" />
               <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
             </PATH_ELEMENT>
           </PATH>
@@ -260,7 +373,11 @@
               <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Dependencies" />
+              <option name="myItemId" value="DPhysics" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Examples" />
               <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
             </PATH_ELEMENT>
           </PATH>
@@ -282,11 +399,15 @@
               <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Dependencies" />
+              <option name="myItemId" value="DPhysics" />
               <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DarkRift" />
+              <option name="myItemId" value="Examples" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Newton's Balls" />
               <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
             </PATH_ELEMENT>
           </PATH>
@@ -308,15 +429,7 @@
               <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Dependencies" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DarkRift" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PlayerDemo" />
+              <option name="myItemId" value="DPhysics" />
               <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
             </PATH_ELEMENT>
           </PATH>
@@ -331,6 +444,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Assembly-CSharp" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assets" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build-fight (2 projects)" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assembly-CSharp" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="References" />
               <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
             </PATH_ELEMENT>
           </PATH>
@@ -341,7 +476,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="Rag&#9;FILE&#9;file:///Users/fruiz/Dev/Personal/build-fight/build-fight/Assets/Scripts/VoxelEngine/RagdollCube.cs&#10;Char&#9;FILE&#9;file:///Users/fruiz/Dev/Personal/build-fight/build-fight/Assets/Scripts/Character/CharacterUserControl.cs&#10;Cat&#9;FILE&#9;file:///Users/fruiz/Dev/Personal/build-fight/build-fight/Assets/Scripts/Interactables/CatapultRock.cs&#10;Cata&#9;FILE&#9;file:///Users/fruiz/Dev/Personal/build-fight/build-fight/Assets/Scripts/Interactables/Catapult.cs&#10;WorO&#9;FILE&#9;file:///Users/fruiz/Dev/Personal/build-fight/build-fight/Assets/Scripts/VoxelEngine/WorldObjectsView.cs&#10;BlockTe&#9;FILE&#9;file:///Users/fruiz/Dev/Personal/build-fight/build-fight/Assets/Scripts/VoxelEngine/BlockTextureInfo.cs&#10;Ray&#9;FILE&#9;file://D:/DEV/build2d/build-fight/Assets/Scripts/VoxelEngine/RaycastBlockCreator.cs&#10;MeshC&#9;null&#9;null&#10;Worl&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="Room&#9;null&#9;null&#10;Rag&#9;FILE&#9;file:///Users/fruiz/Dev/Personal/build-fight/build-fight/Assets/Scripts/VoxelEngine/RagdollCube.cs&#10;Char&#9;FILE&#9;file:///Users/fruiz/Dev/Personal/build-fight/build-fight/Assets/Scripts/Character/CharacterUserControl.cs&#10;Cat&#9;FILE&#9;file:///Users/fruiz/Dev/Personal/build-fight/build-fight/Assets/Scripts/Interactables/CatapultRock.cs&#10;Cata&#9;FILE&#9;file:///Users/fruiz/Dev/Personal/build-fight/build-fight/Assets/Scripts/Interactables/Catapult.cs&#10;WorO&#9;FILE&#9;file:///Users/fruiz/Dev/Personal/build-fight/build-fight/Assets/Scripts/VoxelEngine/WorldObjectsView.cs&#10;BlockTe&#9;FILE&#9;file:///Users/fruiz/Dev/Personal/build-fight/build-fight/Assets/Scripts/VoxelEngine/BlockTextureInfo.cs&#10;Ray&#9;FILE&#9;file://D:/DEV/build2d/build-fight/Assets/Scripts/VoxelEngine/RaycastBlockCreator.cs&#10;MeshC&#9;null&#9;null&#10;Worl&#9;null&#9;null" />
   </component>
   <component name="RunManager" selected=".NET Project.Default">
     <configuration default="true" type="DotNetProject" factoryName=".NET Project">
@@ -400,11 +535,12 @@
       <workItem from="1488911505590" duration="1395000" />
       <workItem from="1488980388410" duration="2977000" />
       <workItem from="1489065126580" duration="2888000" />
+      <workItem from="1489763132173" duration="3230000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47529000" />
+    <option name="totallyTimeSpent" value="50759000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -417,10 +553,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1413" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Change Signature" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13185067" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13264495" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -450,22 +585,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Standard Assets/CrossPlatformInput/Scripts/VirtualInput.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Character/PlatformerCharacter.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1134">
-          <caret line="63" column="76" lean-forward="false" selection-start-line="63" selection-start-column="76" selection-end-line="63" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/VoxelEngine/RaycastBlockCreator.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MeshCreator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MeshCreator.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/VoxelEngine/WorldMeshView.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="774">
@@ -514,20 +634,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/VoxelEngine/RaycastBlockCreator.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/WorldGenerator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MeshCreator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="5" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/WorldGenerator.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MeshCreator.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/VoxelEngine/RaycastBlockCreator.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/VoxelEngine/WorldMeshView.cs">
       <provider selected="true" editor-type-id="text-editor">
@@ -536,20 +644,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/WorldGenerator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MeshCreator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="5" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/WorldGenerator.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MeshCreator.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/VoxelEngine/WorldMeshView.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="688">
@@ -557,13 +653,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/WorldGenerator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/WorldGenerator.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Character/PlataformerCharacter.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Standard Assets/CrossPlatformInput/Scripts/CrossPlatformInputManager.cs" />
     <entry file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/v08/DecompilerCache/decompiler/4483F2E8-6F8E-44D5-B559-4EC4F43322CC/a1/98ec6faf/Debug.cs" />
@@ -586,13 +676,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Standard Assets/CrossPlatformInput/Scripts/PlatformSpecific/MobileInput.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MeshCreator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75">
-          <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MeshCreator.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/VoxelEngine/IWorld.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -654,46 +738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-          <folding>
-            <marker date="1488981770000" expanded="true" signature="6:66" ph="..." />
-            <marker date="1488981770000" expanded="true" signature="118:6246" ph="{...}" />
-            <marker date="1488981770000" expanded="true" signature="152:6244" ph="{...}" />
-            <marker date="1488981770000" expanded="true" signature="434:511" ph="{...}" />
-            <marker date="1488981770000" expanded="false" signature="559:660" ph="{...}" />
-            <marker date="1488981770000" expanded="false" signature="704:758" ph="{...}" />
-            <marker date="1488981770000" expanded="false" signature="790:850" ph="{...}" />
-            <marker date="1488981770000" expanded="false" signature="881:941" ph="{...}" />
-            <marker date="1488981770000" expanded="false" signature="990:1101" ph="{...}" />
-            <marker date="1488981770000" expanded="false" signature="1172:1286" ph="{...}" />
-            <marker date="1488981770000" expanded="false" signature="1320:2914" ph="{...}" />
-            <marker date="1488981770000" expanded="true" signature="1477:2881" ph="{...}" />
-            <marker date="1488981770000" expanded="true" signature="1889:2867" ph="{...}" />
-            <marker date="1488981770000" expanded="true" signature="1961:2736" ph="{...}" />
-            <marker date="1488981770000" expanded="true" signature="2023:2570" ph="{...}" />
-            <marker date="1488981770000" expanded="true" signature="2164:2321" ph="{...}" />
-            <marker date="1488981770000" expanded="true" signature="2392:2544" ph="{...}" />
-            <marker date="1488981770000" expanded="true" signature="2614:2714" ph="{...}" />
-            <marker date="1488981770000" expanded="true" signature="2761:2849" ph="{...}" />
-            <marker date="1488981770000" expanded="false" signature="2989:3162" ph="{...}" />
-            <marker date="1488981770000" expanded="false" signature="3252:4895" ph="{...}" />
-            <marker date="1488981770000" expanded="true" signature="3347:4724" ph="{...}" />
-            <marker date="1488981770000" expanded="true" signature="3437:3523" ph="{...}" />
-            <marker date="1488981770000" expanded="true" signature="3654:3871" ph="{...}" />
-            <marker date="1488981770000" expanded="true" signature="3721:3853" ph="{...}" />
-            <marker date="1488981770000" expanded="true" signature="3939:4156" ph="{...}" />
-            <marker date="1488981770000" expanded="true" signature="4006:4138" ph="{...}" />
-            <marker date="1488981770000" expanded="true" signature="4223:4440" ph="{...}" />
-            <marker date="1488981770000" expanded="true" signature="4290:4422" ph="{...}" />
-            <marker date="1488981770000" expanded="true" signature="4493:4710" ph="{...}" />
-            <marker date="1488981770000" expanded="true" signature="4560:4692" ph="{...}" />
-            <marker date="1488981770000" expanded="true" signature="4741:4815" ph="{...}" />
-            <marker date="1488981770000" expanded="false" signature="4961:5969" ph="{...}" />
-            <marker date="1488981770000" expanded="true" signature="5473:5549" ph="{...}" />
-            <marker date="1488981770000" expanded="true" signature="5607:5685" ph="{...}" />
-            <marker date="1488981770000" expanded="true" signature="5744:5823" ph="{...}" />
-            <marker date="1488981770000" expanded="true" signature="5881:5959" ph="{...}" />
-            <marker date="1488981770000" expanded="false" signature="6036:6238" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -722,14 +766,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="774">
           <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding>
-            <marker date="1488986964000" expanded="true" signature="6:83" ph="..." />
-            <marker date="1488986964000" expanded="true" signature="592:646" ph="{...}" />
-            <marker date="1488986964000" expanded="true" signature="664:721" ph="{...}" />
-            <marker date="1488986964000" expanded="true" signature="746:801" ph="{...}" />
-            <marker date="1488986964000" expanded="true" signature="827:883" ph="{...}" />
-            <marker date="1488986964000" expanded="true" signature="912:1141" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -740,53 +776,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/WorldGenerator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/WorldGenerator.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/VoxelEngine/RagdollCube.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <marker date="1489067411000" expanded="true" signature="70:375" ph="{...}" />
-            <marker date="1489067411000" expanded="true" signature="117:373" ph="{...}" />
-            <marker date="1489067411000" expanded="true" signature="214:367" ph="{...}" />
-            <marker date="1489067411000" expanded="true" signature="269:357" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Network/NetworkManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1059">
-          <caret line="83" column="48" lean-forward="false" selection-start-line="83" selection-start-column="48" selection-end-line="83" selection-end-column="48" />
-          <folding>
-            <marker date="1489067356000" expanded="true" signature="6:140" ph="..." />
-            <marker date="1489067356000" expanded="true" signature="185:3116" ph="{...}" />
-            <marker date="1489067356000" expanded="true" signature="539:593" ph="{...}" />
-            <marker date="1489067356000" expanded="true" signature="609:1471" ph="{...}" />
-            <marker date="1489067356000" expanded="true" signature="967:1405" ph="{...}" />
-            <marker date="1489067356000" expanded="true" signature="1499:1645" ph="{...}" />
-            <marker date="1489067356000" expanded="true" signature="1505:1613" ph="/* You will want this here otherwise the server wont notice until someone else sends data to this ... */" />
-            <marker date="1489067356000" expanded="true" signature="1721:3114" ph="{...}" />
-            <marker date="1489067356000" expanded="true" signature="1725:1981" ph="/* When any data is received it will be passed here, ... */" />
-            <marker date="1489067356000" expanded="true" signature="2015:3111" ph="{...}" />
-            <marker date="1489067356000" expanded="true" signature="2137:2301" ph="{...}" />
-            <marker date="1489067356000" expanded="true" signature="2423:3107" ph="{...}" />
-            <marker date="1489067356000" expanded="true" signature="2433:2558" ph="/* Instantiate the player ... */" />
-            <marker date="1489067356000" expanded="true" signature="2988:3102" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterUserControl.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-188">
+        <state relative-caret-position="-219">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <marker date="1489067382000" expanded="true" signature="6:127" ph="..." />
@@ -807,27 +807,122 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Network/NetworkManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="18" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+          <folding>
+            <marker date="1489067356000" expanded="true" signature="6:140" ph="..." />
+            <marker date="1489067356000" expanded="true" signature="185:3116" ph="{...}" />
+            <marker date="1489067356000" expanded="true" signature="539:593" ph="{...}" />
+            <marker date="1489067356000" expanded="true" signature="609:1471" ph="{...}" />
+            <marker date="1489067356000" expanded="true" signature="967:1405" ph="{...}" />
+            <marker date="1489067356000" expanded="true" signature="1499:1645" ph="{...}" />
+            <marker date="1489067356000" expanded="true" signature="1505:1613" ph="/* You will want this here otherwise the server wont notice until someone else sends data to this ... */" />
+            <marker date="1489067356000" expanded="true" signature="1721:3114" ph="{...}" />
+            <marker date="1489067356000" expanded="true" signature="1725:1981" ph="/* When any data is received it will be passed here, ... */" />
+            <marker date="1489067356000" expanded="true" signature="2015:3111" ph="{...}" />
+            <marker date="1489067356000" expanded="true" signature="2137:2301" ph="{...}" />
+            <marker date="1489067356000" expanded="true" signature="2423:3107" ph="{...}" />
+            <marker date="1489067356000" expanded="true" signature="2433:2558" ph="/* Instantiate the player ... */" />
+            <marker date="1489067356000" expanded="true" signature="2988:3102" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Character/PlatformerCharacter.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="64" column="13" lean-forward="false" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+        <state relative-caret-position="270">
+          <caret line="50" column="16" lean-forward="false" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
           <folding>
-            <marker date="1489068171000" expanded="true" signature="6:32" ph="..." />
-            <marker date="1489068171000" expanded="true" signature="68:5154" ph="{...}" />
-            <marker date="1489068171000" expanded="true" signature="123:5152" ph="{...}" />
-            <marker date="1489068171000" expanded="true" signature="1550:1828" ph="{...}" />
-            <marker date="1489068171000" expanded="true" signature="1865:2716" ph="{...}" />
-            <marker date="1489068171000" expanded="true" signature="1921:2138" ph="/* The player is grounded if a circlecast to the groundcheck position hits anything designated as ground ... */" />
-            <marker date="1489068171000" expanded="true" signature="2309:2435" ph="{...}" />
-            <marker date="1489068171000" expanded="true" signature="2779:4801" ph="{...}" />
-            <marker date="1489068171000" expanded="true" signature="2914:3220" ph="{...}" />
-            <marker date="1489068171000" expanded="true" signature="3135:3206" ph="{...}" />
-            <marker date="1489068171000" expanded="true" signature="3466:4445" ph="{...}" />
-            <marker date="1489068171000" expanded="true" signature="3638:3823" ph="/* The Speed animator parameter is set to the absolute value of the horizontal input. ... */" />
-            <marker date="1489068171000" expanded="true" signature="4057:4165" ph="{...}" />
-            <marker date="1489068171000" expanded="true" signature="4323:4431" ph="{...}" />
-            <marker date="1489068171000" expanded="true" signature="4553:4791" ph="{...}" />
-            <marker date="1489068171000" expanded="true" signature="4831:5146" ph="{...}" />
+            <marker date="1489763346000" expanded="true" signature="68:5152" ph="{...}" />
+            <marker date="1489763346000" expanded="true" signature="123:5150" ph="{...}" />
+            <marker date="1489763346000" expanded="true" signature="1865:2714" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/DPhysics/Examples/Newton's Balls/NewtonsBalls.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="89" lean-forward="false" selection-start-line="15" selection-start-column="89" selection-end-line="15" selection-end-column="89" />
+          <folding>
+            <marker date="1461282242000" expanded="true" signature="6:60" ph="..." />
+            <marker date="1461282242000" expanded="true" signature="62:374" ph="/// Here's a neat example of what you can do with DPhysics that other physics engine can't. ... " />
+            <marker date="1461282242000" expanded="true" signature="416:3912" ph="{...}" />
+            <marker date="1461282242000" expanded="true" signature="608:2202" ph="{...}" />
+            <marker date="1461282242000" expanded="true" signature="1175:1276" ph="/* Instantiating our walls first ... */" />
+            <marker date="1461282242000" expanded="true" signature="1639:2199" ph="{...}" />
+            <marker date="1461282242000" expanded="true" signature="1874:2195" ph="{...}" />
+            <marker date="1461282242000" expanded="true" signature="2224:2310" ph="{...}" />
+            <marker date="1461282242000" expanded="true" signature="2327:2444" ph="{...}" />
+            <marker date="1461282242000" expanded="true" signature="2559:3910" ph="{...}" />
+            <marker date="1461282242000" expanded="true" signature="2596:3190" ph="{...}" />
+            <marker date="1461282242000" expanded="true" signature="2722:2749" ph="{...}" />
+            <marker date="1461282242000" expanded="true" signature="2887:2920" ph="{...}" />
+            <marker date="1461282242000" expanded="true" signature="3054:3087" ph="{...}" />
+            <marker date="1461282242000" expanded="true" signature="3124:3186" ph="{...}" />
+            <marker date="1461282242000" expanded="true" signature="3190:3667" ph="{...}" />
+            <marker date="1461282242000" expanded="true" signature="3232:3663" ph="{...}" />
+            <marker date="1461282242000" expanded="true" signature="3242:3409" ph="/* This dessimilate and destroys all existing physics objects. ... */" />
+            <marker date="1461282242000" expanded="true" signature="3473:3637" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/share/JetBrains/Shared/v08/DecompilerCache/decompiler/A1B84B1F-1D41-4254-A882-8EFC3B8635BB/06/55c5fc94/AudioSpatializerMicrosoft.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/DPhysics/Multiplayer/Scripts/Client.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="127" column="64" lean-forward="true" selection-start-line="127" selection-start-column="64" selection-end-line="127" selection-end-column="64" />
+          <folding>
+            <marker date="1461282242000" expanded="true" signature="6:110" ph="..." />
+            <marker date="1461282242000" expanded="true" signature="147:5934" ph="{...}" />
+            <marker date="1461282242000" expanded="true" signature="151:364" ph="Initialization" />
+            <marker date="1461282242000" expanded="true" signature="262:352" ph="{...}" />
+            <marker date="1461282242000" expanded="true" signature="367:2978" ph="Communication" />
+            <marker date="1461282242000" expanded="true" signature="523:1226" ph="{...}" />
+            <marker date="1461282242000" expanded="true" signature="698:893" ph="{...}" />
+            <marker date="1461282242000" expanded="true" signature="773:889" ph="{...}" />
+            <marker date="1461282242000" expanded="true" signature="914:1133" ph="{...}" />
+            <marker date="1461282242000" expanded="true" signature="1229:1298" ph="/// Handles data received from server. ... " />
+            <marker date="1461282242000" expanded="true" signature="1360:2515" ph="{...}" />
+            <marker date="1461282242000" expanded="true" signature="1391:2512" ph="{...}" />
+            <marker date="1461282242000" expanded="true" signature="1395:1621" ph="/* Meta data includes connection, room initialization, and subject. ... */" />
+            <marker date="1461282242000" expanded="true" signature="1982:2320" ph="{...}" />
+            <marker date="1461282242000" expanded="true" signature="2197:2315" ph="{...}" />
+            <marker date="1461282242000" expanded="true" signature="2232:2282" ph="{...}" />
+            <marker date="1461282242000" expanded="true" signature="2358:2498" ph="{...}" />
+            <marker date="1461282242000" expanded="true" signature="2517:2634" ph="/// Sends a command to the server, to be distributed to everyone in the player's room. ... " />
+            <marker date="1461282242000" expanded="true" signature="2680:2859" ph="{...}" />
+            <marker date="1461282242000" expanded="true" signature="2931:2966" ph="{...}" />
+            <marker date="1461282242000" expanded="true" signature="2981:5776" ph="Simulation" />
+            <marker date="1461282242000" expanded="true" signature="3001:3207" ph="/// The target simulation rate. In ideal networking conditions, simulation will run at this rate. Make sure you c ... " />
+            <marker date="1461282242000" expanded="true" signature="3257:3380" ph="/// Frames are stored here. When saving a game, this is what you would serialize and replay. ... " />
+            <marker date="1461282242000" expanded="true" signature="3458:3617" ph="/// Represents how many simulation frames have passed; given the same input and step, all clients will have the s ... " />
+            <marker date="1461282242000" expanded="true" signature="3668:3705" ph="{...}" />
+            <marker date="1461282242000" expanded="true" signature="3675:3702" ph="{...}" />
+            <marker date="1461282242000" expanded="true" signature="3871:5063" ph="{...}" />
+            <marker date="1461282242000" expanded="true" signature="3903:4109" ph="/* Adjust the simulation rate based on how many frames in advance we have ... */" />
+            <marker date="1461282242000" expanded="true" signature="4131:5060" ph="{...}" />
+            <marker date="1461282242000" expanded="true" signature="4275:4349" ph="{...}" />
+            <marker date="1461282242000" expanded="true" signature="4692:4835" ph="{...}" />
+            <marker date="1461282242000" expanded="true" signature="4702:4799" ph="/* Executes the command... ... */" />
+            <marker date="1461282242000" expanded="true" signature="4904:4928" ph="{...}" />
+            <marker date="1461282242000" expanded="true" signature="5065:5134" ph="/// Spawns and initializes 200 objects ... " />
+            <marker date="1461282242000" expanded="true" signature="5160:5764" ph="{...}" />
+            <marker date="1461282242000" expanded="true" signature="5352:5761" ph="{...}" />
+            <marker date="1461282242000" expanded="true" signature="5390:5757" ph="{...}" />
+            <marker date="1461282242000" expanded="true" signature="5691:5752" ph="Spawn your custom physics object here" />
+            <marker date="1461282242000" expanded="true" signature="5779:5932" ph="Visualization: Communicating with Unity's rendering" />
+            <marker date="1461282242000" expanded="true" signature="5862:5920" ph="{...}" />
           </folding>
         </state>
       </provider>

@@ -48,7 +48,7 @@ namespace Assets.Scripts.Character
             m_Anim.SetFloat("vSpeed", m_Rigidbody.velocity.y);
 
             var speed = m_Rigidbody.velocity.magnitude;
-//            m_Anim.SetFloat("Speed", Mathf.Abs(speed));
+            m_Anim.SetFloat("Speed", Mathf.Abs(speed));
         }
 
 
